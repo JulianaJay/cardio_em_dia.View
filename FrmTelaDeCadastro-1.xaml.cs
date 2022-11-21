@@ -23,5 +23,20 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void ContinuarCadastro(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CadastrarPeloGoogle(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CadastrarPeloFacebook(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

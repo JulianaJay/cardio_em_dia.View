@@ -7,4 +7,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="CardioEmDia.png" />
+    <None Remove="Google__G__Logo.svg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="FrmTelaDeLogin.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="FrmTelaDeLogin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CardioEmDia.png" />
+    <Resource Include="Google__G__Logo.svg.png" />
+  </ItemGroup>
+
 </Project>

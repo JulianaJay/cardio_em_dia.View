@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaDeCadastro_1" Height="450" Width="800">
-    <Grid>
-        
+        Title="FrmTelaDeCadastro_1" Height="840" Width="420">
+    <Grid Background="#FF2EB7FF">
+        <Image HorizontalAlignment="Center" Height="263" Margin="0,10,0,0" VerticalAlignment="Top" Width="256" Source="/CardioEmDia.png" OpacityMask="Black"/>
+        <Rectangle HorizontalAlignment="Center" Height="569" Margin="0,255,0,0" Stroke="Black" VerticalAlignment="Top" Width="420" Fill="#FFF9FFFF"/>
+        <TextBox x:Name="txtEmailCadastro" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Center" Width="332" Background="#FFDBDEE8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16"/>
+        <TextBox x:Name="txtSenhaCadastro" HorizontalAlignment="Center" Height="50" Margin="0,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Background="#FFDBDEE8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16"/>
+        <TextBox x:Name="txtConfirmarSenhaCadastro" HorizontalAlignment="Center" Height="50" Margin="0,560,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Background="#FFDBDEE8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16"/>
+        <Button x:Name="BtnFacebook" Content="Facebook" HorizontalAlignment="Left" Height="63" Margin="216,623,0,0" VerticalAlignment="Top" Width="160" Background="#FF389FFF" Click="CadastrarPeloFacebook"/>
+        <Button x:Name="BtnContinuarCadastro" Content="Continuar" HorizontalAlignment="Center" Height="65" Margin="0,710,0,0" VerticalAlignment="Top" Width="332" Foreground="White" Background="#FF383838" BorderBrush="Black" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="ContinuarCadastro"/>
+        <Button x:Name="BtnGoogle" Content="Google" HorizontalAlignment="Left" Height="63" Margin="44,623,0,0" VerticalAlignment="Top" Width="160" BorderBrush="Black" Background="#FF383838" Foreground="White" Click="CadastrarPeloGoogle"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="44,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="44,459,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="44,542,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CONFIRMAR "/><Run Text="SENHA"/></TextBlock>
+
     </Grid>
 </Window>
