@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cardio_em_dia", "cardio_em_dia.csproj", "{013F9631-D612-4A95-ABDB-B2C31B49E172}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{013F9631-D612-4A95-ABDB-B2C31B49E172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013F9631-D612-4A95-ABDB-B2C31B49E172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013F9631-D612-4A95-ABDB-B2C31B49E172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013F9631-D612-4A95-ABDB-B2C31B49E172}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56DB1101-3DD9-4BDC-A276-5760EC682B5C}
+	EndGlobalSection
+EndGlobal
