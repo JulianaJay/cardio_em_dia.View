@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="FrmTelaDeCadastro_2" Height="1920" Width="1080">
     <Grid>
-        
+        <Rectangle Height="244" Stroke="White" VerticalAlignment="Top" Fill="#FF38B6FF" Margin="0,-14,0,0"/>
+        <Image HorizontalAlignment="Left" Height="215" Margin="817,0,0,0" VerticalAlignment="Top" Width="249" Source="/CardioEmDia.png"/>
+        <TextBox x:Name="txtEmailCadastro" HorizontalAlignment="Center" Height="114" TextWrapping="Wrap" VerticalAlignment="Top" Width="592" Background="#FFDBDEE8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,368,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" Margin="244,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+
     </Grid>
 </Window>

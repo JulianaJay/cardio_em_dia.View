@@ -3,21 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace cardio_em_dia
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FrmTelaDeLogin : ContentView
+    /// <summary>
+    /// Lógica interna para FrmTelaDeLogin.xaml
+    /// </summary>
+    public partial class FrmTelaDeLogin : Window
     {
         public FrmTelaDeLogin()
         {
-            InitializeComponent();
+            
         }
 
-        private void LogarPeloGoogle(object sender, System.Windows.RoutedEventArgs e)
+        private void LogarPeloGoogle(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogarPeloFacebook(object sender, RoutedEventArgs e)
         {
 
         }
