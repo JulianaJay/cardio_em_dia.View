@@ -26,12 +26,12 @@ namespace cardio_em_dia
 
         private void LogarPeloGoogle(object sender, RoutedEventArgs e)
         {
-
+            //Topico não importante
         }
 
         private void LogarPeloFacebook(object sender, RoutedEventArgs e)
         {
-
+            //Topico não importante
         }
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
