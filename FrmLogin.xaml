@@ -13,7 +13,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 134453.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,689,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
+        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,689,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="{x:Null}" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
             </Button.Background>
