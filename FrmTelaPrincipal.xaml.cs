@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace cardio_em_dia
 {
     /// <summary>
-    /// Lógica interna para FrmTelaDeCadastro_2.xaml
+    /// Lógica interna para FrmTelaPrincipal.xaml
     /// </summary>
-    public partial class FrmTelaDeCadastro_2 : Window
+    public partial class FrmTelaPrincipal : Window
     {
-        public FrmTelaDeCadastro_2()
+        public FrmTelaPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

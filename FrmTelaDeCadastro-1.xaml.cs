@@ -24,11 +24,6 @@ namespace cardio_em_dia
             InitializeComponent();
         }
 
-        private void ContinuarCadastro(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void CadastrarPeloGoogle(object sender, RoutedEventArgs e)
         {
 
@@ -37,6 +32,20 @@ namespace cardio_em_dia
         private void CadastrarPeloFacebook(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void AbrirTelaDeLogin(object sender, RoutedEventArgs e)
+        {
+            FrmTelaDeLogin frmTelaDeLogin = new FrmTelaDeLogin();
+            frmTelaDeLogin.Show();
+            Close();
+        }
+
+        private void AbrirTelaDeCadastro2(object sender, RoutedEventArgs e)
+        {
+            FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2();
+            frmTelaDeCadastro2.Show();
+            Close();
         }
     }
 }

@@ -8,8 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Botão Facebook.jpg" />
+    <None Remove="Captura de tela 2022-11-25 133233.jpg.png" />
+    <None Remove="Captura de tela 2022-11-25 133627.jpg" />
+    <None Remove="Captura de tela 2022-11-25 134453.jpg" />
+    <None Remove="Captura de tela 2022-11-25 135648.jpg" />
+    <None Remove="Captura de tela 2022-11-25 142359.jpg" />
     <None Remove="CardioEmDia.png" />
     <None Remove="Google__G__Logo.svg.png" />
+    <None Remove="logo.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,8 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Botão Facebook.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 133233.jpg.png" />
+    <Resource Include="Captura de tela 2022-11-25 133627.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 134453.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 135648.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 142359.jpg" />
     <Resource Include="CardioEmDia.png" />
     <Resource Include="Google__G__Logo.svg.png" />
+    <Resource Include="logo.jpg" />
   </ItemGroup>
 
 </Project>
