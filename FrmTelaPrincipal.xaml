@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaPrincipal" Height="850" Width="420">
+        Title="FrmTelaPrincipal" Height="850" Width="440">
     <Grid>
         
     </Grid>

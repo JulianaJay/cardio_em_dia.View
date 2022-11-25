@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaDeCadastro_1" Height="850" Width="420">
+        Title="FrmTelaDeCadastro_1" Height="850" Width="440">
     <Grid Background="#FF3095E9">
         <Image HorizontalAlignment="Center" Height="181" Margin="0,35,0,0" VerticalAlignment="Top" Width="180" Source="/logo.jpg">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/logo.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <Rectangle HorizontalAlignment="Center" Margin="0,254,0,0" Stroke="#FF3095E9" Width="424" Height="582" VerticalAlignment="Top">
+        <Rectangle HorizontalAlignment="Center" Margin="0,247,0,0" Stroke="#FF3095E9" Width="440" Height="589" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 134453.jpg"/>
             </Rectangle.Fill>
@@ -28,9 +28,9 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133233.jpg.png"/>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CONFIRMAR "/><Run Text="SENHA"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-181,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CONFIRMAR "/><Run Text="SENHA"/></TextBlock>
         <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="217.7,640,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle" RenderTransformOrigin="0.398,0.524">
             <Button.BorderBrush>
                 <ImageBrush/>
@@ -39,7 +39,7 @@
                 <ImageBrush ImageSource="/Botão Facebook.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnTelaDeLogin" Content="Tela de Login" HorizontalAlignment="Center" Margin="0,789.8,0,0" VerticalAlignment="Center" BorderBrush="#FFEFEFEF" Background="#FFEFEFEF" FontWeight="Normal" FontSize="11" FontFamily="Arial Rounded MT Bold" Height="18" Width="84" Foreground="#FF6F6F6F" Click="AbrirTelaDeLogin"/>
+        <Button x:Name="btnTelaDeLogin" Content="Tela de Login" HorizontalAlignment="Center" Margin="0,789,0,0" VerticalAlignment="Top" BorderBrush="#FFEFEFEF" Background="#FFEFEFEF" FontWeight="Normal" FontSize="14" FontFamily="Arial Rounded MT Bold" Height="21" Width="110" Foreground="#FF6F6F6F" Click="AbrirTelaDeLogin" RenderTransformOrigin="0.5,0.007"/>
         <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,709,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaDeCadastro2">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
