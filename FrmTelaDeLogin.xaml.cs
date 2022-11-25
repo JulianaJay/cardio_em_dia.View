@@ -33,5 +33,10 @@ namespace cardio_em_dia
         {
 
         }
+
+        private void ContinuarCadastro(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
