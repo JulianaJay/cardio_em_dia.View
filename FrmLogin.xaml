@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FrmTelaDeLogin" Height="840" Width="420">
     <Grid Background="#FF3095E9">
-        <Rectangle HorizontalAlignment="Left" Margin="0,242,0,0" Stroke="#FF3095E9" Width="424" Height="582" VerticalAlignment="Top">
+        <Rectangle HorizontalAlignment="Center" Margin="0,242,0,0" Stroke="#FF3095E9" Width="424" Height="582" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 134453.jpg"/>
             </Rectangle.Fill>
@@ -38,12 +38,12 @@
                 <ImageBrush ImageSource="/logo.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <TextBox x:Name="txtEmailDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White" Margin="0,376,0,0"/>
-        <TextBox x:Name="txtSenhaDoUsuario" HorizontalAlignment="Center" Height="50" Margin="0,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="95,794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="Não tem uma conta?"/></TextBlock>
-        <Button Content="Cadastre-se" HorizontalAlignment="Left" Margin="219,792,0,0" VerticalAlignment="Top" BorderBrush="#FFEFEFEF" FontFamily="Arial Rounded MT Bold" Background="#FFEFEFEF" Click="AbrirTelaDeCadastro"/>
+        <TextBox x:Name="txtEmailDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White" Margin="0,367,0,0"/>
+        <TextBox x:Name="txtSenhaDoUsuario" HorizontalAlignment="Center" Height="50" Margin="0,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="93,794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal" Foreground="#FF6F6F6F" FontSize="14"><Run Language="pt-br" Text="Não tem uma conta?"/></TextBlock>
+        <Button Content="Cadastre-se" HorizontalAlignment="Left" Margin="237,792,0,0" VerticalAlignment="Top" BorderBrush="#FFEFEFEF" FontFamily="Arial Rounded MT Bold" Background="#FFEFEFEF" Click="AbrirTelaDeCadastro" FontSize="14"/>
 
     </Grid>
 </Window>
