@@ -8,11 +8,6 @@
         Title="FrmTelaDeCadastro_2" Height="850" Width="420">
     <Grid x:Name="txtSexoDoUsuario">
         <Image Height="79" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="Fill"/>
-        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="52" Margin="0,747,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
-            <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
-            </Button.Background>
-        </Button>
         <TextBox x:Name="txtNomeDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,138,0,0" BorderBrush="White"/>
         <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="NOME"/></TextBlock>
         <TextBox x:Name="txtSobrenomeDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,223,0,0" BorderBrush="White"/>
@@ -34,5 +29,10 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
+        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,746,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
+            <Button.Background>
+                <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
