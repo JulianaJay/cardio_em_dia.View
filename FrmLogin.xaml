@@ -1,4 +1,4 @@
-﻿<Window x:Class="cardio_em_dia.FrmTelaDeLogin"
+﻿<Window x:Class="cardio_em_dia.FrmLogin"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -17,7 +17,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Left" Height="54" Margin="32,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle">
+        <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Left" Height="54" Margin="32,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloGoogle">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -25,7 +25,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133233.jpg.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="219,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle" RenderTransformOrigin="0.398,0.524">
+        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="219,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloFacebook" RenderTransformOrigin="0.398,0.524">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
