@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaDeCadastro_2" Height="850" Width="420">
+        Title="FrmTelaDeCadastro_2" Height="850" Width="420"
+        ResizeMode="NoResize">
     <Grid x:Name="txtSexoDoUsuario">
         <Image Height="79" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="Fill"/>
         <TextBox x:Name="txtNomeDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,138,0,0" BorderBrush="White"/>

@@ -46,5 +46,10 @@ namespace cardio_em_dia
             frmTelaDeCadastro1.Show();
             Close();
         }
+
+        private void RecuperarSenha(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
