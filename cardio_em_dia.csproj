@@ -14,6 +14,9 @@
     <None Remove="Captura de tela 2022-11-25 134453.jpg" />
     <None Remove="Captura de tela 2022-11-25 135648.jpg" />
     <None Remove="Captura de tela 2022-11-25 142359.jpg" />
+    <None Remove="Captura de tela 2022-11-25 162508.jpg" />
+    <None Remove="Captura de tela 2022-11-25 163022.jpg" />
+    <None Remove="Captura de tela 2022-11-25 163112.jpg" />
     <None Remove="CardioEmDia.png" />
     <None Remove="Google__G__Logo.svg.png" />
     <None Remove="logo.jpg" />
@@ -26,6 +29,9 @@
     <Resource Include="Captura de tela 2022-11-25 134453.jpg" />
     <Resource Include="Captura de tela 2022-11-25 135648.jpg" />
     <Resource Include="Captura de tela 2022-11-25 142359.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 162508.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 163022.jpg" />
+    <Resource Include="Captura de tela 2022-11-25 163112.jpg" />
     <Resource Include="CardioEmDia.png" />
     <Resource Include="Google__G__Logo.svg.png" />
     <Resource Include="logo.jpg" />

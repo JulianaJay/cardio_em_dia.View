@@ -6,8 +6,34 @@
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
         Title="FrmTelaPrincipal" Height="850" Width="440">
-    <Grid>
-        <Image Height="86" VerticalAlignment="Top"/>
+    <Grid Background="#FFEFEFEF">
+        <Image Height="86" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 163112.jpg"/>
+        <Image HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="6" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="111,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="18" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="425,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="16" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="0,19,0,0"/>
+        <Button Content="" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="30" Width="343" BorderBrush="#FFEFEFEF" IsDefault="True">
+            <Button.Background>
+                <ImageBrush ImageSource="/Captura de tela 2022-11-25 163022.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="344" Height="30" Visibility="Hidden"/>
+        <Button Content="" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="74" Width="344" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.11"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.331"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>
