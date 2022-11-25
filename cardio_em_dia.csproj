@@ -20,16 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Remove="FrmTelaDeLogin.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="FrmTelaDeLogin.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Botão Facebook.jpg" />
     <Resource Include="Captura de tela 2022-11-25 133233.jpg.png" />
     <Resource Include="Captura de tela 2022-11-25 133627.jpg" />
