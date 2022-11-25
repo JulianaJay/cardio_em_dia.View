@@ -31,4 +31,9 @@
     <Resource Include="logo.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+
 </Project>

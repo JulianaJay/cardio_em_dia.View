@@ -39,5 +39,12 @@ namespace cardio_em_dia
             frmTelaPrincipal.Show();
             Close();
         }
+
+        private void AbrirTelaDeCadastro(object sender, RoutedEventArgs e)
+        {
+            FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
+            frmTelaDeCadastro1.Show();
+            Close();
+        }
     }
 }
