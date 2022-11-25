@@ -36,7 +36,7 @@ namespace cardio_em_dia
 
         private void AbrirTelaDeLogin(object sender, RoutedEventArgs e)
         {
-            FrmTelaDeLogin frmTelaDeLogin = new FrmTelaDeLogin();
+            FrmLogin frmTelaDeLogin = new FrmLogin();
             frmTelaDeLogin.Show();
             Close();
         }

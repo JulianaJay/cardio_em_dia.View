@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace cardio_em_dia
 {
     /// <summary>
-    /// Lógica interna para FrmTelaDeLogin.xaml
+    /// Lógica interna para FrmLogin.xaml
     /// </summary>
-    public partial class FrmTelaDeLogin : Window
+    public partial class FrmLogin : Window
     {
-        public FrmTelaDeLogin()
+        public FrmLogin()
         {
-            
+            InitializeComponent();
         }
-
         private void LogarPeloGoogle(object sender, RoutedEventArgs e)
         {
             //Topico não importante
@@ -38,6 +37,13 @@ namespace cardio_em_dia
         {
             FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
             frmTelaPrincipal.Show();
+            Close();
+        }
+
+        private void AbrirTelaDeCadastro(object sender, RoutedEventArgs e)
+        {
+            FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
+            frmTelaDeCadastro1.Show();
             Close();
         }
     }
