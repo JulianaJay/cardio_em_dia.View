@@ -7,31 +7,41 @@
         mc:Ignorable="d"
         Title="FrmTelaDeLogin" Height="840" Width="420">
     <Grid Background="#FF3095E9">
-        <Image HorizontalAlignment="Center" Height="208" Margin="0,41,0,0" VerticalAlignment="Top" Width="256" Source="/logo.jpg"/>
-        <Rectangle HorizontalAlignment="Center" Height="527" Margin="0,297,0,0" VerticalAlignment="Top" Width="454">
+        <Rectangle HorizontalAlignment="Center" Margin="0,242,0,0" Stroke="#FF3095E9" Width="424" Height="582" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 134453.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBox x:Name="txtEmailCadastro" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,406,0,0" BorderBrush="#FFAAB1B9"/>
-        <TextBox x:Name="txtSenhaCadastro" HorizontalAlignment="Center" Height="50" Margin="0,526,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="#FFAAB1B9"/>
-        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="63" Margin="216,623,0,0" VerticalAlignment="Top" Width="176" Click="LogarPeloFacebook" Foreground="White" BorderBrush="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Botão Facebook.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="65" Margin="0,710,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="{x:Null}" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="ContinuarCadastro">
+        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,689,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnGoogleLogin" Content="" HorizontalAlignment="Left" Height="63" Margin="28,623,0,0" VerticalAlignment="Top" Width="176" BorderBrush="{x:Null}" Foreground="White" Click="LogarPeloGoogle">
+        <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Left" Height="54" Margin="32,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133233.jpg.png"/>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="44,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="24" Margin="44,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
+        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="219,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle" RenderTransformOrigin="0.398,0.524">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="/Botão Facebook.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Center" Height="181" Margin="0,35,0,0" VerticalAlignment="Top" Width="180" Source="/logo.jpg">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/logo.jpg"/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBox x:Name="txtEmailDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White" Margin="0,376,0,0"/>
+        <TextBox x:Name="txtSenhaDoUsuario" HorizontalAlignment="Center" Height="50" Margin="0,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
 
     </Grid>
 </Window>

@@ -20,11 +20,6 @@
         <TextBox x:Name="txtEmailCadastro" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,362,0,0" BorderBrush="White"/>
         <TextBox x:Name="txtSenhaCadastro" HorizontalAlignment="Center" Height="50" Margin="0,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
         <TextBox x:Name="txtConfirmarSenhaCadastro" HorizontalAlignment="Center" Height="50" Margin="0,547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
-        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="52" Margin="0,717,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaDeCadastro2">
-            <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
-            </Button.Background>
-        </Button>
         <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Center" Height="54" Margin="-185.3,640,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle">
             <Button.BorderBrush>
                 <ImageBrush/>
@@ -45,6 +40,11 @@
             </Button.Background>
         </Button>
         <Button x:Name="btnTelaDeLogin" Content="Tela de Login" HorizontalAlignment="Center" Margin="0,789.8,0,0" VerticalAlignment="Center" BorderBrush="#FFEFEFEF" Background="#FFEFEFEF" FontWeight="Normal" FontSize="11" FontFamily="Arial Rounded MT Bold" Height="18" Width="84" Foreground="#FF6F6F6F" Click="AbrirTelaDeLogin"/>
+        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,709,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaDeCadastro2">
+            <Button.Background>
+                <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

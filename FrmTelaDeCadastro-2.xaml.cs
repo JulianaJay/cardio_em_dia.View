@@ -26,7 +26,9 @@ namespace cardio_em_dia
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
         }
     }
 }
