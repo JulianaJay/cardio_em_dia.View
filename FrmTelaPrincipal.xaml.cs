@@ -23,40 +23,5 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
-
-        private void AbrirMenu(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirAcompanhamento(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirContatos(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirDietaSaude(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirDiario(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirAgenda(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void AbrirMeditacaoRelaxamento(object sender, MouseButtonEventArgs e)
-        {
-
-        }
     }
 }
