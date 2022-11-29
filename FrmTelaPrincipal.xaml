@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
         Title="FrmTelaPrincipal" Height="850" Width="440">
-    <Grid Background="#FFEFEFEF">
+    <Grid Background="#FFF0EFEB">
         <Image Height="86" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 163112.jpg"/>
         <Image HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="6" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="111,0,0,0"/>
@@ -44,7 +44,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
             <Button.Background>
-                <ImageBrush ImageSource="/Image6.png"/>
+                <ImageBrush ImageSource="/Diário.PNG"/>
             </Button.Background>
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
@@ -60,13 +60,13 @@
                 </TransformGroup>
             </Button.RenderTransform>
             <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+                <ImageBrush ImageSource="/Agenda.PNG"/>
             </Button.Background>
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,451,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button Content="" HorizontalAlignment="Center" Margin="0,453,0,0" VerticalAlignment="Top" Height="89" Width="349" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -76,7 +76,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
             <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+                <ImageBrush ImageSource="/Relaxamento e Meditação.PNG"/>
             </Button.Background>
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
@@ -92,7 +92,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
             <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+                <ImageBrush ImageSource="/Clinicas e Contatos.PNG"/>
             </Button.Background>
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
@@ -108,7 +108,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
             <Button.Background>
-                <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
+                <ImageBrush ImageSource="/Dieta e saúde.PNG"/>
             </Button.Background>
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>

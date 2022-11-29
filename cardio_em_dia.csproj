@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Agenda.PNG" />
     <None Remove="Botão Facebook.jpg" />
     <None Remove="Captura de tela 2022-11-25 133233.jpg.png" />
     <None Remove="Captura de tela 2022-11-25 133627.jpg" />
@@ -18,11 +19,16 @@
     <None Remove="Captura de tela 2022-11-25 163022.jpg" />
     <None Remove="Captura de tela 2022-11-25 163112.jpg" />
     <None Remove="CardioEmDia.png" />
+    <None Remove="Clinicas e Contatos.PNG" />
+    <None Remove="Dieta e saúde.PNG" />
+    <None Remove="Diário.PNG" />
     <None Remove="Google__G__Logo.svg.png" />
     <None Remove="logo.jpg" />
+    <None Remove="Relaxamento e Meditação.PNG" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Agenda.PNG" />
     <Resource Include="Botão Facebook.jpg" />
     <Resource Include="Captura de tela 2022-11-25 133233.jpg.png" />
     <Resource Include="Captura de tela 2022-11-25 133627.jpg" />
@@ -33,8 +39,12 @@
     <Resource Include="Captura de tela 2022-11-25 163022.jpg" />
     <Resource Include="Captura de tela 2022-11-25 163112.jpg" />
     <Resource Include="CardioEmDia.png" />
+    <Resource Include="Clinicas e Contatos.PNG" />
+    <Resource Include="Dieta e saúde.PNG" />
+    <Resource Include="Diário.PNG" />
     <Resource Include="Google__G__Logo.svg.png" />
     <Resource Include="logo.jpg" />
+    <Resource Include="Relaxamento e Meditação.PNG" />
   </ItemGroup>
 
   <ItemGroup>
