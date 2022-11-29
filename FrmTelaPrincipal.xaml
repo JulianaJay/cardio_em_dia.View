@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaPrincipal" Height="850" Width="420">
-    <Grid>
-        
+        Title="FrmTelaPrincipal" Height="850" Width="440">
+    <Grid Background="#FFF1EEF3">
+        <Image Height="62" VerticalAlignment="Top"/>
+        <Image Margin="0,0,0,772" Source="/Image3.png" Stretch="Fill" OpacityMask="Black"/>
+        <Image x:Name="btnMenu" Margin="10,11,380,783" Source="/Image4.png" Stretch="Fill" MouseLeftButtonDown="AbrirMenu"/>
+        <Image x:Name="imgAcompanhamentoMedico" Margin="54,152,50,582" Source="/Image5.png" Stretch="Fill" MouseLeftButtonDown="AbrirAcompanhamento"/>
+        <Image x:Name="imgDiario" Margin="54,256,50,479" Source="/Image6.png" Stretch="Fill" MouseLeftButtonDown="AbrirDiario">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Image6.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgAgenda" Margin="54,360,50,378" Source="/Image7.png" Stretch="Fill" MouseLeftButtonDown="AbrirAgenda"/>
+        <Image x:Name="imgMeditacao" Margin="0,461,0,0" Source="/Image8.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Top" Height="98" Width="330" MouseLeftButtonDown="AbrirMeditacaoRelaxamento"/>
+        <Image x:Name="imgContatos" Margin="54,569,52,172" Source="/Image9.png" Stretch="Fill" MouseLeftButtonDown="AbrirContatos"/>
+        <Image x:Name="imgDieta" Margin="54,679,50,65" Source="/Image10.png" Stretch="Fill" MouseLeftButtonDown="AbrirDietaSaude"/>
+        <Image x:Name="imgPesquisa" Margin="22,85,22,698" Source="/Image11.png" Stretch="Fill"/>
+
     </Grid>
 </Window>

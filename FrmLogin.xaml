@@ -5,20 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaDeLogin" Height="850" Width="420"
-        ResizeMode="NoResize">
+        Title="FrmTelaDeLogin" Height="840" Width="440">
     <Grid Background="#FF3095E9">
-        <Rectangle HorizontalAlignment="Center" Margin="0,242,0,0" Stroke="#FF3095E9" Width="424" Height="592" VerticalAlignment="Top">
+        <Rectangle HorizontalAlignment="Center" Margin="1,242,0,0" Stroke="#FF3095E9" Width="440" Height="591" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 134453.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,689,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="{x:Null}" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
+
+        <!--<Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,689,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="{x:Null}" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">-->
+
+        <Button x:Name="BtnContinuarCadastro" Content="" HorizontalAlignment="Center" Height="61" Margin="0,675,0,0" VerticalAlignment="Top" Width="364" Foreground="White" BorderBrush="White" FontSize="14" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Click="AbrirTelaPrincipal">
+
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Left" Height="54" Margin="32,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloGoogle">
+        <Button x:Name="BtnGoogle" Content="" HorizontalAlignment="Center" Height="54" Margin="-190,600,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloGoogle">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -26,7 +29,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133233.jpg.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="219,612,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloFacebook" RenderTransformOrigin="0.398,0.524">
+        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Center" Height="54" Margin="194,600,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="LogarPeloFacebook" RenderTransformOrigin="0.398,0.524">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -41,11 +44,10 @@
         </Image>
         <TextBox x:Name="txtEmailDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White" Margin="0,367,0,0"/>
         <TextBox x:Name="txtSenhaDoUsuario" HorizontalAlignment="Center" Height="50" Margin="0,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="28,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="93,794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal" Foreground="#FF6F6F6F" FontSize="14"><Run Language="pt-br" Text="Não tem uma conta?"/></TextBlock>
-        <Button Content="Cadastre-se" HorizontalAlignment="Left" Margin="237,792,0,0" VerticalAlignment="Top" BorderBrush="#FFEFEFEF" FontFamily="Arial Rounded MT Bold" Background="#FFEFEFEF" Click="AbrirTelaDeCadastro" FontSize="14"/>
-        <TextBlock x:Name="txtEsqueceuSenha" HorizontalAlignment="Left" Height="22" Margin="275,522,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontWeight="Normal" Foreground="#FF6F6F6F" MouseLeftButtonDown="RecuperarSenha"><Run Language="pt-br" Text="Esqueceu a senha?"/></TextBlock>
-        
+        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="-109,776,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal" Foreground="#FF6F6F6F" FontSize="14"><Run Language="pt-br" Text="Não tem uma conta?"/></TextBlock>
+        <Button Content="Cadastre-se" HorizontalAlignment="Center" Margin="124,774,0,0" VerticalAlignment="Top" BorderBrush="#FFEFEFEF" FontFamily="Arial Rounded MT Bold" Background="#FFEFEFEF" Click="AbrirTelaDeCadastro" FontSize="14"/>
+
     </Grid>
 </Window>
