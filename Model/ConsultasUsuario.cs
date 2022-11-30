@@ -9,7 +9,7 @@ namespace cardio_em_dia.Model
 {
     public class ConsultasUsuario
     {
-        public static bool InserirUsuario(string email, string senha, string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+        public static bool NovoUsuario(string email, string senha, string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool foiInserido = false;
@@ -88,7 +88,6 @@ namespace cardio_em_dia.Model
             return usuario;
         }
 
-        //A partir daqui o código vai cuidar da criptografia
         public static bool VerificarUsuarioExistente(string email)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
@@ -119,33 +118,6 @@ namespace cardio_em_dia.Model
                 }
             }
             return usuarioExiste;
-        }
-
-        public void ValidarLogin()
-        {
-            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-            try
-            {
-                //abrindo comando para conectar
-                conexao.Open();
-                var comando = conexao.CreateCommand();
-                comando.CommandText = @"
-            select from Usuario where tipoUsuario = @tipoUsuario and id = @id";
-
-                var leitura = comando.ExecuteReader();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-            finally
-            {
-                if (conexao.State == System.Data.ConnectionState.Open)
-                {
-                    conexao.Close();
-                }
-            }
         }
     }
 }

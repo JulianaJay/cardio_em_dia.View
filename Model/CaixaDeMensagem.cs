@@ -26,5 +26,14 @@ namespace cardio_em_dia.Model
                 MessageBoxButton.OK,
                 MessageBoxImage.Warning);
         }
+
+        public static void ExibirMensagemSenhaOuEmailIncorretos()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                    "Email ou senha incorretos, tente novamente mais tarde!",
+                    "Aviso!",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+        }
     }
 }

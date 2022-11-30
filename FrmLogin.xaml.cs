@@ -36,14 +36,29 @@ namespace cardio_em_dia
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-            ConfirmarLogin();
+            if (VerificarCampos() == true)
+            {
+                string email = txtEmailDoUsuario.Text;
+                string senha = txtSenhaDoUsuario.Text;
+                Usuario usuario = ConsultasUsuario.ObterUsuario(email, senha);
+                if (usuario != null)
+                {
+                    AbrirATelaPrincipal();
+                }
+                else
+                {
+                    CaixaDeMensagem.ExibirMensagemSenhaOuEmailIncorretos();
+                }
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+            }
         }
 
         private void AbrirTelaDeCadastro(object sender, RoutedEventArgs e)
         {
-            FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
-            frmTelaDeCadastro1.Show();
-            Close();
+            AbrirATelaDeCadastro();
         }
 
         private void RecuperarSenha(object sender, MouseButtonEventArgs e)
@@ -51,25 +66,30 @@ namespace cardio_em_dia
             //Topico não importante
         }
 
-        private void ConfirmarLogin()
+
+        private bool VerificarCampos()
         {
             if (txtEmailDoUsuario.Text != "" && txtSenhaDoUsuario.Text != "")
             {
-                //if ()
-                //{
-                FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
-                frmTelaPrincipal.Show();
-                Close();
-                //}
-                //else
-                //{
-
-                //}
+                return true;
             }
             else
             {
                 CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+                return false;
             }
+        }
+        private void AbrirATelaPrincipal()
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
+        }
+        private void AbrirATelaDeCadastro()
+        {
+            FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
+            frmTelaDeCadastro1.Show();
+            Close();
         }
     }
 }

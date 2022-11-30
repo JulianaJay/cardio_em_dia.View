@@ -9,19 +9,19 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid x:Name="txtSexoDoUsuario">
-        <TextBox x:Name="txtNomeDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,125,0,0" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="NOME"/></TextBlock>
-        <TextBox x:Name="txtSobrenomeDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,210,0,0" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SOBRENOME"/></TextBlock>
-        <TextBox x:Name="txtTelefoneDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,297,0,0" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="TELEFONE"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SEXO"/></TextBlock>
-        <TextBox x:Name="txtCPFDoUsuario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,475,0,0" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,452,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CPF"/></TextBlock>
-        <TextBox x:Name="txtCEPDoUsusario" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="0,563,0,0" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CEP"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="23" Margin="-218,627,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="UF"/></TextBlock>
-        <ComboBox x:Name="txtEstadoDoUsuario" HorizontalAlignment="Center" Margin="0,650,0,0" VerticalAlignment="Top" Width="364" BorderBrush="#FFAAB1B9" Height="50">
+        <TextBox x:Name="txtNomeDoUsuario" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="40,88,0,0" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="NOME"/></TextBlock>
+        <TextBox x:Name="txtSobrenomeDoUsuario" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="40,173,0,0" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SOBRENOME"/></TextBlock>
+        <TextBox x:Name="txtTelefoneDoUsuario" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="40,260,0,0" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="TELEFONE"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SEXO"/></TextBlock>
+        <TextBox x:Name="txtCPFDoUsuario" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="40,438,0,0" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CPF"/></TextBlock>
+        <TextBox x:Name="txtCEPDoUsusario" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFAAB1B9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="16" Margin="40,526,0,0" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CEP"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="42,590,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="UF"/></TextBlock>
+        <ComboBox x:Name="txtEstadoDoUsuario" HorizontalAlignment="Left" Margin="40,613,0,0" VerticalAlignment="Top" Width="364" BorderBrush="#FFAAB1B9" Height="50">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -34,7 +34,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 133627.jpg"/>
             </Button.Background>
         </Button>
-        <ComboBox x:Name="txtSexoDoUsuario1" HorizontalAlignment="Center" Margin="0,388,0,0" VerticalAlignment="Top" Width="364" BorderBrush="#FFAAB1B9" Height="50">
+        <ComboBox x:Name="txtSexoDoUsuario1" HorizontalAlignment="Left" Margin="40,351,0,0" VerticalAlignment="Top" Width="364" BorderBrush="#FFAAB1B9" Height="50">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -42,6 +42,5 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Image HorizontalAlignment="Left" Height="100" Margin="128,235,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
