@@ -74,8 +74,8 @@ namespace cardio_em_dia
         {
             if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
             {
-                FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2();
-                frmTelaDeCadastro2.Show();
+                FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+                frmTelaPrincipal.Show();
                 Close();
             }
             else

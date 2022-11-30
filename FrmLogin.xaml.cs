@@ -57,9 +57,9 @@ namespace cardio_em_dia
             {
                 //if ()
                 //{
-                    FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
-                    frmTelaDeCadastro1.Show();
-                    Close();
+                FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+                frmTelaPrincipal.Show();
+                Close();
                 //}
                 //else
                 //{

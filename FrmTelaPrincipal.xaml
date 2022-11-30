@@ -20,7 +20,7 @@
             </Button.Background>
         </Button>
         <TextBox HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="344" Height="30" Visibility="Hidden"/>
-        <Button x:Name="btnAcompanhamento" Content="" HorizontalAlignment="Center" Margin="0,188,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAcompanhamento">
+        <Button x:Name="btnAcompanhamento" Content="" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAcompanhamento">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -36,7 +36,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnDiario" Content="" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDiario">
+        <Button x:Name="btnDiario" Content="" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDiario">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -52,7 +52,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnAgenda" Content="" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAgenda">
+        <Button x:Name="btnAgenda" Content="" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAgenda">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -68,7 +68,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnMeditacao" Content="" HorizontalAlignment="Center" Margin="0,495,0,0" VerticalAlignment="Top" Height="89" Width="350" RenderTransformOrigin="0.5,0.5" Click="AbrirMeditação">
+        <Button x:Name="btnMeditacao" Content="" HorizontalAlignment="Center" Margin="0,464,0,0" VerticalAlignment="Top" Height="89" Width="350" RenderTransformOrigin="0.5,0.5" Click="AbrirMeditação">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -84,7 +84,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnClinicas" Content="" HorizontalAlignment="Center" Margin="0,598,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirClinicasContatos">
+        <Button x:Name="btnClinicas" Content="" HorizontalAlignment="Center" Margin="0,567,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirClinicasContatos">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -100,7 +100,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnDietaSaude" Content="" HorizontalAlignment="Center" Margin="0,698,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDietaSaude">
+        <Button x:Name="btnDietaSaude" Content="" HorizontalAlignment="Center" Margin="0,667,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDietaSaude">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
