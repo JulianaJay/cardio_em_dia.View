@@ -44,9 +44,7 @@ namespace cardio_em_dia
 
         private void AbrirTelaDeCadastro2(object sender, RoutedEventArgs e)
         {
-            FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2();
-            frmTelaDeCadastro2.Show();
-            Close();
+            ConfirmarPrimeiraParteDoCadastro();
         }
 
         private void ConfirmarPrimeiraParteDoCadastro()
