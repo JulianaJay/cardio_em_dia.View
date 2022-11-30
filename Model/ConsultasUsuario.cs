@@ -9,7 +9,7 @@ namespace cardio_em_dia.Model
 {
     public class ConsultasUsuario
     {
-        public static bool NovoUsuario(string email, string senha, string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+        public static bool NovoUsuario1(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool foiInserido = false;
@@ -21,10 +21,41 @@ namespace cardio_em_dia.Model
 
 
                 comando.CommandText = @"
-                INSERT INTO Usuario (email, senha, nome, sobrenome, telefone, sexo, cpf, cep, uf) 
-                VALUES(@email,@senha, @nome, @sobrenome, @telefone, @sexo, @cpf, @cep, @uf)";
+                INSERT INTO Usuario (email, senha) 
+                VALUES(@email,@senha)";
                 comando.Parameters.AddWithValue("@email", email);
                 comando.Parameters.AddWithValue("@senha", senhaCriptografada);
+                
+                var leitura = comando.ExecuteReader();
+
+                foiInserido = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return foiInserido;
+        }
+        public static bool NovoUsuario2(string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool foiInserido = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+
+                comando.CommandText = @"
+                INSERT INTO Usuario (nome, sobrenome, telefone, sexo, cpf, cep, uf) 
+                VALUES(@nome, @sobrenome, @telefone, @sexo, @cpf, @cep, @uf)";
                 comando.Parameters.AddWithValue("@nome", nome);
                 comando.Parameters.AddWithValue("@sobrenome", sobrenome);
                 comando.Parameters.AddWithValue("@telefone", telefone);
@@ -32,7 +63,7 @@ namespace cardio_em_dia.Model
                 comando.Parameters.AddWithValue("@cpf", cpf);
                 comando.Parameters.AddWithValue("@cep", cep);
                 comando.Parameters.AddWithValue("@uf", uf);
-                
+
                 var leitura = comando.ExecuteReader();
 
                 foiInserido = true;
@@ -118,6 +149,38 @@ namespace cardio_em_dia.Model
                 }
             }
             return usuarioExiste;
+        }
+
+        public static bool VerificarSeCPFExistente(int cpf)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool cpfExiste = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+                comando.CommandText = @"Select * from Usuario Where cpf = @cpf";
+                comando.Parameters.AddWithValue("@cpf", cpf);
+                var leitura = comando.ExecuteReader();
+                while (leitura.Read())
+                {
+
+                    break;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+            return cpfExiste;
         }
     }
 }

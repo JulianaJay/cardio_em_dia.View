@@ -67,21 +67,59 @@ namespace cardio_em_dia
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-            ConfirmarSegundaParteDoCadastro();
-        }
-
-        private void ConfirmarSegundaParteDoCadastro()
-        {
-            if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
+            if (VerificarCampos() == true)
             {
-                FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
-                frmTelaPrincipal.Show();
-                Close();
+                string nome = txtNomeDoUsuario.Text;
+                string sobrenome = txtSobrenomeDoUsuario.Text;
+                string telefone = txtTelefoneDoUsuario.Text;
+                string sexo = txtSexoDoUsuario1.Text;
+                int CPF = int.Parse(txtCPFDoUsuario.Text);
+                int CEP = int.Parse(txtCEPDoUsusario.Text);
+                string Estado = txtEstadoDoUsuario.Text;
+
+                bool cpfExiste = ConsultasUsuario.VerificarSeCPFExistente(CPF);
+                if (cpfExiste == false)
+                {
+                    bool validarCadastro = ConsultasUsuario.NovoUsuario2(nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
+                    if (validarCadastro == true)
+                    {
+                        CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
+                        AbrirATelaPrincipal();
+                    }
+                    else
+                    {
+                        CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
+                    }
+                }
+                else
+                {
+                    CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
+                }
             }
             else
             {
                 CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+            }s
+        }
+
+        private bool VerificarCampos()
+        {
+            if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
+            {
+                return true;
             }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+                return false;
+            }
+        }
+
+        private void AbrirATelaPrincipal()
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
         }
     }
 }

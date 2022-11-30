@@ -35,5 +35,22 @@ namespace cardio_em_dia.Model
                     MessageBoxButton.OK,
                     MessageBoxImage.Warning);
         }
+
+        public static void ExibirMensagemUsuarioCadastrado()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Usuario cadastrado com sucesso",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ExibirMensagemErroUsuarioCadastrado()
+        {
+            MessageBoxResult result = MessageBox.Show(
+            "Não foi possível fazer o cadastro, tente novamente mais tarde!",
+            "Error!",
+            MessageBoxButton.OK,
+            MessageBoxImage.Error);
+        }
     }
 }
