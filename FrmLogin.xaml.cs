@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cardio_em_dia.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,7 +50,28 @@ namespace cardio_em_dia
 
         private void RecuperarSenha(object sender, MouseButtonEventArgs e)
         {
+            //Topico não importante
+        }
 
+        private void ConfirmarLogin()
+        {
+            if (txtEmailDoUsuario.Text != "" && txtSenhaDoUsuario.Text != "")
+            {
+                //if ()
+                //{
+                    FrmTelaDeCadastro_1 frmTelaDeCadastro1 = new FrmTelaDeCadastro_1();
+                    frmTelaDeCadastro1.Show();
+                    Close();
+                //}
+                //else
+                //{
+
+                //}
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+            }
         }
     }
 }
