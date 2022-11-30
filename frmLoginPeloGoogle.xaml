@@ -9,8 +9,12 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid Background="White">
-        <Image HorizontalAlignment="Left" Height="487" Margin="20,0,0,0" VerticalAlignment="Center" Width="422" Source="/LogGoogle.PNG"/>
-        <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="259*"/>
+            <ColumnDefinition Width="191*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="487" Margin="20,0,0,0" VerticalAlignment="Center" Width="422" Source="/LogGoogle.PNG" Grid.ColumnSpan="2"/>
+        <Grid Background="White" Grid.ColumnSpan="2">
             <Image HorizontalAlignment="Center" Height="549" Margin="0,13,0,0" VerticalAlignment="Top" Width="408" Source="/LogGoogle.PNG"/>
         </Grid>
     </Grid>
