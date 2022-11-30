@@ -49,7 +49,7 @@ namespace cardio_em_dia
                 bool usuarioExiste = ConsultasUsuario.VerificarUsuarioExistente(email);
                 if (usuarioExiste == false)
                 {
-                    bool validarCadastro = ConsultasUsuario.NovoUsuario1(email, senha);
+                    bool validarCadastro = ConsultasUsuario.NovoUsuario(email, senha);
                     if (validarCadastro == true)
                     {
                         CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();

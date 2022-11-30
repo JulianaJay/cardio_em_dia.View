@@ -9,7 +9,7 @@ namespace cardio_em_dia.Model
 {
     public class ConsultasUsuario
     {
-        public static bool NovoUsuario1(string email, string senha)
+        public static bool NovoUsuario(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool foiInserido = false;
@@ -44,7 +44,7 @@ namespace cardio_em_dia.Model
 
             return foiInserido;
         }
-        public static bool NovoUsuario2(string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+        public static bool AtualizarUsuario(string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool foiInserido = false;

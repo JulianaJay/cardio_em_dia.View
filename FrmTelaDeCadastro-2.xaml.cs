@@ -80,7 +80,8 @@ namespace cardio_em_dia
                 bool cpfExiste = ConsultasUsuario.VerificarSeCPFExistente(CPF);
                 if (cpfExiste == false)
                 {
-                    bool validarCadastro = ConsultasUsuario.NovoUsuario2(nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
+                    //pegar as informações 
+                    bool validarCadastro = ConsultasUsuario.AtualizarUsuario(nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
                     if (validarCadastro == true)
                     {
                         CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
