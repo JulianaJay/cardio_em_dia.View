@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaDeLogin" Height="840" Width="440">
+        Title="FrmTelaDeLogin" Height="840" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#FF3095E9">
         <Rectangle HorizontalAlignment="Center" Margin="1,242,0,0" Stroke="#FF3095E9" Width="440" Height="591" VerticalAlignment="Top">
             <Rectangle.Fill>

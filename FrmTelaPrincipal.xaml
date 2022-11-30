@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmTelaPrincipal" Height="850" Width="440">
+        Title="FrmTelaPrincipal" Height="850" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF0EFEB">
-        <Image Height="86" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 163112.jpg"/>
+        <Image Height="86" VerticalAlignment="Top" Source="/Captura de tela 2022-11-25 163112.jpg" Margin="0,5,0,0" HorizontalAlignment="Center"/>
         <Image HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="6" VerticalAlignment="Top" Width="364" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="111,0,0,0"/>
         <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="18" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="425,0,0,0"/>
-        <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="16" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="0,19,0,0"/>
+        <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="147" Source="/Captura de tela 2022-11-25 142359.jpg" Stretch="None" Margin="0,19,0,0"/>
         <Button Content="" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="30" Width="343" BorderBrush="#FFEFEFEF" IsDefault="True">
             <Button.Background>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 163022.jpg"/>
             </Button.Background>
         </Button>
         <TextBox HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="344" Height="30" Visibility="Hidden"/>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnAcompanhamento" Content="" HorizontalAlignment="Center" Margin="0,188,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAcompanhamento">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -34,7 +36,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,283,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnDiario" Content="" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDiario">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,7 +52,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnAgenda" Content="" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirAgenda">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -66,7 +68,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,495,0,0" VerticalAlignment="Top" Height="89" Width="350" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnMeditacao" Content="" HorizontalAlignment="Center" Margin="0,495,0,0" VerticalAlignment="Top" Height="89" Width="350" RenderTransformOrigin="0.5,0.5" Click="AbrirMeditação">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -82,7 +84,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Margin="0,598,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnClinicas" Content="" HorizontalAlignment="Center" Margin="0,598,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirClinicasContatos">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -98,7 +100,7 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="43,698,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnDietaSaude" Content="" HorizontalAlignment="Center" Margin="0,698,0,0" VerticalAlignment="Top" Height="88" Width="344" RenderTransformOrigin="0.5,0.5" Click="AbrirDietaSaude">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -113,6 +115,11 @@
             <Button.BorderBrush>
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnConfigMenu" Content="" HorizontalAlignment="Left" Height="27" Margin="18,19,0,0" VerticalAlignment="Top" Width="36" BorderBrush="{x:Null}" Click="AbrirConfigNoMenu">
+            <Button.Background>
+                <ImageBrush ImageSource="/Config.PNG"/>
+            </Button.Background>
         </Button>
 
     </Grid>

@@ -23,5 +23,52 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void AbrirAcompanhamento(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirDiario(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirAgenda(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirMeditação(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirClinicasContatos(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirDietaSaude(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
+            FrmTelaDeObras.Show();
+            Close();
+        }
+
+        private void AbrirConfigNoMenu(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
