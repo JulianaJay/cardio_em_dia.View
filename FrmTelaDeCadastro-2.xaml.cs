@@ -99,7 +99,7 @@ namespace cardio_em_dia
             else
             {
                 CaixaDeMensagem.ExibirMenssagemPreencherCampos();
-            }s
+            }
         }
 
         private bool VerificarCampos()
