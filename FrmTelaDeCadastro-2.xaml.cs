@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cardio_em_dia.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,6 +70,20 @@ namespace cardio_em_dia
             FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
             frmTelaPrincipal.Show();
             Close();
+        }
+
+        private void ConfirmarSegundaParteDoCadastro()
+        {
+            if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
+            {
+                FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2();
+                frmTelaDeCadastro2.Show();
+                Close();
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+            }
         }
     }
 }
