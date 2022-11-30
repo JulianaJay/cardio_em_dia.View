@@ -26,12 +26,16 @@ namespace cardio_em_dia
         }
         private void LogarPeloGoogle(object sender, RoutedEventArgs e)
         {
-            //Topico não importante
+            frmLoginPeloGoogle FrmLoginPeloGoogle = new frmLoginPeloGoogle();
+            FrmLoginPeloGoogle.Show();
+            Close();
         }
 
         private void LogarPeloFacebook(object sender, RoutedEventArgs e)
         {
-            //Topico não importante
+            frmLoginPeloFacebook FrmLoginPeloFacebook = new frmLoginPeloFacebook();
+            FrmLoginPeloFacebook.Show();
+            Close();
         }
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)

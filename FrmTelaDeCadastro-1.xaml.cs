@@ -27,12 +27,14 @@ namespace cardio_em_dia
 
         private void CadastrarPeloGoogle(object sender, RoutedEventArgs e)
         {
-            //Topico não importante
+            frmLoginPeloGoogle frmGoogle = new frmLoginPeloGoogle();
+            frmGoogle.Show();
         }
 
         private void CadastrarPeloFacebook(object sender, RoutedEventArgs e)
         {
-            //Topico não importante
+            frmLoginPeloFacebook frmFacebook = new frmLoginPeloFacebook();
+            frmFacebook.Show();
         }
 
         private void AbrirTelaDeLogin(object sender, RoutedEventArgs e)
