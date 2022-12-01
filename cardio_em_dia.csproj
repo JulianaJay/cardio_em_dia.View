@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="5.jpg" />
     <None Remove="Agenda.PNG" />
     <None Remove="Agora não.PNG" />
     <None Remove="Botão Facebook.jpg" />
@@ -37,6 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="5.jpg" />
     <Resource Include="Agenda.PNG" />
     <Resource Include="Agora não.PNG" />
     <Resource Include="Botão Facebook.jpg" />
