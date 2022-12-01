@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="1.jpg" />
+    <None Remove="13.jpg" />
+    <None Remove="3.jpg" />
     <None Remove="Agenda.PNG" />
     <None Remove="Agora não.PNG" />
     <None Remove="Botão Facebook.jpg" />
@@ -19,7 +22,10 @@
     <None Remove="Captura de tela 2022-11-25 162508.jpg" />
     <None Remove="Captura de tela 2022-11-25 163022.jpg" />
     <None Remove="Captura de tela 2022-11-25 163112.jpg" />
+    <None Remove="Captura de tela 2022-12-01 151843.jpg" />
     <None Remove="CardioEmDia.png" />
+    <None Remove="cc.jpg" />
+    <None Remove="cc1.jpg" />
     <None Remove="Celular inferior.PNG" />
     <None Remove="Clinicas e Contatos.PNG" />
     <None Remove="Config.PNG" />
@@ -33,10 +39,14 @@
     <None Remove="Relaxamento e Meditação.PNG" />
     <None Remove="Return.PNG" />
     <None Remove="Telas.PNG" />
+    <None Remove="tp3.jpg" />
     <None Remove="Voltar.PNG" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="1.jpg" />
+    <Resource Include="13.jpg" />
+    <Resource Include="3.jpg" />
     <Resource Include="Agenda.PNG" />
     <Resource Include="Agora não.PNG" />
     <Resource Include="Botão Facebook.jpg" />
@@ -48,7 +58,10 @@
     <Resource Include="Captura de tela 2022-11-25 162508.jpg" />
     <Resource Include="Captura de tela 2022-11-25 163022.jpg" />
     <Resource Include="Captura de tela 2022-11-25 163112.jpg" />
+    <Resource Include="Captura de tela 2022-12-01 151843.jpg" />
     <Resource Include="CardioEmDia.png" />
+    <Resource Include="cc.jpg" />
+    <Resource Include="cc1.jpg" />
     <Resource Include="Celular inferior.PNG" />
     <Resource Include="Clinicas e Contatos.PNG" />
     <Resource Include="Config.PNG" />
@@ -62,6 +75,7 @@
     <Resource Include="Relaxamento e Meditação.PNG" />
     <Resource Include="Return.PNG" />
     <Resource Include="Telas.PNG" />
+    <Resource Include="tp3.jpg" />
     <Resource Include="Voltar.PNG" />
   </ItemGroup>
 

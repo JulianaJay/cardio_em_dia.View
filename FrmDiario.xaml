@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmDiario" Height="450" Width="800">
+        Title="FrmDiario" Height="850" Width="440">
     <Grid>
-        
+        <Image Margin="0,0,1,0" Source="/3.jpg" Stretch="UniformToFill" Height="833" VerticalAlignment="Center" HorizontalAlignment="Right" Width="438"/>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FFE2D3D3">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn1" Content="" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn2" Content="" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn3" Content="" HorizontalAlignment="Center" Margin="0,296,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn4" Content="" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn5" Content="" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn6" Content="" HorizontalAlignment="Center" Margin="0,374,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn7" Content="" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn8" Content="" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn9" Content="" HorizontalAlignment="Center" Margin="0,492,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn10" Content="" HorizontalAlignment="Center" Margin="0,531,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn11" Content="" HorizontalAlignment="Center" Margin="0,570,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn12" Content="" HorizontalAlignment="Center" Margin="0,608,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn13" Content="" HorizontalAlignment="Center" Margin="0,646,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,687,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn15" Content="" HorizontalAlignment="Center" Margin="0,725,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn16" Content="" HorizontalAlignment="Center" Margin="0,764,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+        <Button x:Name="btn17" Content="" HorizontalAlignment="Center" Margin="0,802,0,0" VerticalAlignment="Top" Width="420" Height="30" Click="AbriDiario" Visibility="Hidden"/>
+
     </Grid>
 </Window>

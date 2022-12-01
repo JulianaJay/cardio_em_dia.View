@@ -79,7 +79,7 @@ namespace cardio_em_dia
 
         private bool VerificarCampos()
         {
-            if (txtEmailCadastro.Text != "" && txtSenhaCadastro.Text != "" && txtConfirmarSenhaCadastro.Text != "")
+            if (txtEmailCadastro.Text != "" && txtSenhaCadastro.Password != "" && txtConfirmarSenhaCadastro.Password != "")
             {
                 return true;
             }

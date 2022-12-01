@@ -7,6 +7,58 @@
         mc:Ignorable="d"
         Title="FrmAcompanhamentoMedico" Height="850" Width="440">
     <Grid>
-        
+        <Image Margin="1,0,1,1" Source="/1.jpg" Stretch="UniformToFill"/>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF1749C3">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnAcompanhamentoGlicose" Content="" HorizontalAlignment="Left" Margin="16,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDeGlicose" BorderBrush="#FFEFEFEF">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnAcompanhamentoPressao" Content="" HorizontalAlignment="Left" Margin="230,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDePressao" BorderBrush="#FFEFEFEF">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnAcompanhamentoVacinas" Content="" HorizontalAlignment="Center" Margin="0,515,0,0" VerticalAlignment="Top" Height="164" Width="408" Click="AbrirTelaDeAcompanhamentoDeVacinas" BorderBrush="#FFEFEFEF">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnAcompanhamentoConsumoD_Agua" Content="" HorizontalAlignment="Center" Margin="0,708,0,0" VerticalAlignment="Top" Height="164" Width="408" Click="AbrirTelaDeAcompanhamentoConsumoDeAgua" BorderBrush="#FFEFEFEF">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

@@ -26,47 +26,82 @@ namespace cardio_em_dia
 
         private void AbrirAcompanhamento(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmAcompanhamentoMedico frmAcompanhamentoMedico =  new FrmAcompanhamentoMedico();
+            frmAcompanhamentoMedico.Show();
             Close();
         }
 
         private void AbrirDiario(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmDiario FrmDiario = new FrmDiario();
+            FrmDiario.Show();
             Close();
         }
 
         private void AbrirAgenda(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmAgenda frmAgenda = new FrmAgenda();
+            frmAgenda.Show();
             Close();
         }
 
         private void AbrirMeditação(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmMeditacaoERelaxamento frmMeditacaoERelaxamento = new FrmMeditacaoERelaxamento();
+            frmMeditacaoERelaxamento.Show();
             Close();
         }
 
         private void AbrirClinicasContatos(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmClinicasEContatos frmClinicasEContatos = new FrmClinicasEContatos();
+            frmClinicasEContatos.Show();
             Close();
         }
 
         private void AbrirDietaSaude(object sender, RoutedEventArgs e)
         {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
+            FrmDietaESaude frmDietaESaude = new FrmDietaESaude();
+            frmDietaESaude.Show();
             Close();
         }
 
         private void AbrirConfigNoMenu(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FecharBarraMenu(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirBarraDeTarefas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaForum(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaArtigos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaPerfil(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FecharBarraTarefas(object sender, RoutedEventArgs e)
         {
 
         }

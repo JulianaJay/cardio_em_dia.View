@@ -23,5 +23,72 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void AbrirBarraDeTarefas(object sender, RoutedEventArgs e)
+        {
+            imgBarraDeTarefas.Visibility = Visibility.Visible;
+            btnFecharBarra.Visibility = Visibility.Visible;    
+            btnTelaPrincipal.Visibility = Visibility.Visible;
+            btnForum.Visibility = Visibility.Visible;
+            btnArtigos.Visibility = Visibility.Visible;
+            btnPerfil.Visibility = Visibility.Visible;
+        }
+
+        private void FecharBarraTarefas(object sender, RoutedEventArgs e)
+        {
+            imgBarraDeTarefas.Visibility = Visibility.Hidden;
+            btnAbrirBarra.Visibility = Visibility.Hidden;
+            btnTelaPrincipal.Visibility = Visibility.Hidden;
+            btnForum.Visibility = Visibility.Hidden;
+            btnArtigos.Visibility = Visibility.Hidden;
+            btnPerfil.Visibility = Visibility.Hidden;
+            btnAbrirBarra.Visibility = Visibility.Visible;
+            btnAcompanhamentoConsumoD_Agua.Visibility = Visibility.Visible;
+            btnAcompanhamentoGlicose.Visibility = Visibility.Visible;
+            btnAcompanhamentoPressao.Visibility = Visibility.Visible;
+            btnAcompanhamentoVacinas.Visibility = Visibility.Visible;
+        }
+
+        private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal(); 
+            frmTelaPrincipal.Show();
+            Close();
+        }
+
+        private void AbrirTelaForum(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaArtigos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaPerfil(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaDeAcompanhamentoDeGlicose(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaDeAcompanhamentoDePressao(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaDeAcompanhamentoDeVacinas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbrirTelaDeAcompanhamentoConsumoDeAgua(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

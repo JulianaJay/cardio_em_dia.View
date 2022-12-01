@@ -23,5 +23,15 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void AbrirBarraDeTarefas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AbriDiario(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

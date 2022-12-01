@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmMeditacaoERelaxamento" Height="450" Width="800">
+        Title="FrmMeditacaoERelaxamento" Height="850" Width="440">
     <Grid>
-        
+        <Image Margin="1,0,1,1"/>
+
     </Grid>
 </Window>

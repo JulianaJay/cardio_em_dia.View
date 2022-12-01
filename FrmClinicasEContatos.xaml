@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmClinicasEContatos" Height="450" Width="800">
+        Title="FrmClinicasEContatos" Height="850" Width="440">
     <Grid>
-        
+        <Image Margin="1,0,1,1" Source="/cc.jpg" Stretch="UniformToFill"/>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtPesquisa" HorizontalAlignment="Center" Margin="0,79,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="420" Height="33" Visibility="Hidden"/>
+
     </Grid>
 </Window>

@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="FrmAgenda" Height="850" Width="440">
     <Grid>
-        
+        <Image Margin="1,72,1,0" Source="/13.jpg" Height="833" VerticalAlignment="Top"/>
+        <Button x:Name="btn2" Content="" HorizontalAlignment="Center" Margin="0,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn3" Content="" HorizontalAlignment="Left" Margin="290,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn1" Content="" HorizontalAlignment="Left" Margin="38,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn5" Content="" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn4" Content="" HorizontalAlignment="Left" Margin="38,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn6" Content="" HorizontalAlignment="Left" Margin="290,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn8" Content="" HorizontalAlignment="Center" Margin="0,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn9" Content="" HorizontalAlignment="Left" Margin="290,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn7" Content="" HorizontalAlignment="Left" Margin="38,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn11" Content="" HorizontalAlignment="Center" Margin="0,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Margin="290,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn10" Content="" HorizontalAlignment="Left" Margin="38,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,601,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Margin="290,604,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn13" Content="" HorizontalAlignment="Left" Margin="38,604,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn17" Content="" HorizontalAlignment="Center" Margin="0,700,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn18" Content="" HorizontalAlignment="Left" Margin="290,703,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn16" Content="" HorizontalAlignment="Left" Margin="38,703,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn20" Content="" HorizontalAlignment="Center" Margin="0,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn19" Content="" HorizontalAlignment="Left" Margin="38,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
+        <Button x:Name="btn21" Content="" HorizontalAlignment="Left" Margin="290,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" RenderTransformOrigin="1.549,1.711" Visibility="Hidden"/>
+
     </Grid>
 </Window>
