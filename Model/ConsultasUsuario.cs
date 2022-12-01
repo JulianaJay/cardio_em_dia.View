@@ -44,18 +44,24 @@ namespace cardio_em_dia.Model
 
             return foiInserido;
         }
-        public static bool AtualizarUsuario(string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+
+        public static bool AtualizarUsuario(string email, string senha, string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-            bool foiInserido = false;
+            bool foiAtualizado = false;
             try
             {
                 conexao.Open();
                 var comando = conexao.CreateCommand();
+                string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
 
                 comando.CommandText = @"
-                INSERT INTO Usuario (nome, sobrenome, telefone, sexo, cpf, cep, uf) 
-                VALUES(@nome, @sobrenome, @telefone, @sexo, @cpf, @cep, @uf)";
+                    UPDATE Usuario
+                    SET nome = @nome, sobrenome = @sobrenome, telefone = @telefone, sexo = @sexo, cpf = @cpf, cep = @cep, uf = @uf
+                    WHERE email = @email";
+
+                comando.Parameters.AddWithValue("@email", email);
+                comando.Parameters.AddWithValue("@senha", senhaCriptografada);
                 comando.Parameters.AddWithValue("@nome", nome);
                 comando.Parameters.AddWithValue("@sobrenome", sobrenome);
                 comando.Parameters.AddWithValue("@telefone", telefone);
@@ -66,7 +72,7 @@ namespace cardio_em_dia.Model
 
                 var leitura = comando.ExecuteReader();
 
-                foiInserido = true;
+                foiAtualizado = true;
             }
             catch (Exception e)
             {
@@ -80,9 +86,9 @@ namespace cardio_em_dia.Model
                 }
             }
 
-            return foiInserido;
+            return foiAtualizado;
         }
-
+        
         public static Usuario ObterUsuario(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);

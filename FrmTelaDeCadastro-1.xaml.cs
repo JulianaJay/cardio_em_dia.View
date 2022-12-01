@@ -46,23 +46,30 @@ namespace cardio_em_dia
         {
             if (VerificarCampos() == true)
             {
-                string email = txtEmailCadastro.Text;
-                string senha = txtSenhaCadastro.Text;
-                bool usuarioExiste = ConsultasUsuario.VerificarUsuarioExistente(email);
-                if (usuarioExiste == false)
+                if (txtSenhaCadastro.Password == txtConfirmarSenhaCadastro.Password)
                 {
-                    bool validarCadastro = ConsultasUsuario.NovoUsuario(email, senha);
-                    if (validarCadastro == true)
+                    string email = txtEmailCadastro.Text;
+                    string senha = txtSenhaCadastro.Password;
+                    bool usuarioExiste = ConsultasUsuario.VerificarUsuarioExistente(email);
+                    if (usuarioExiste == false)
                     {
-                        CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
-                        AbrirATelaDeCadastro2();
+                        bool validarCadastro = ConsultasUsuario.NovoUsuario(email, senha);
+                        if (validarCadastro == true)
+                        {
+                            CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
+                            AbrirATelaDeCadastro2();
+                        }
+                        else
+                        {
+                            CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
+                        }
                     }
                     else
                     {
-                        CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
+                        CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
                     }
                 }
-                else
+                else 
                 {
                     CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
                 }

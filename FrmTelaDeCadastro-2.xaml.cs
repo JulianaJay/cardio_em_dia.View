@@ -69,6 +69,9 @@ namespace cardio_em_dia
         {
             if (VerificarCampos() == true)
             {
+                string email = "";
+                string senha = "";
+
                 string nome = txtNomeDoUsuario.Text;
                 string sobrenome = txtSobrenomeDoUsuario.Text;
                 string telefone = txtTelefoneDoUsuario.Text;
@@ -81,7 +84,7 @@ namespace cardio_em_dia
                 if (cpfExiste == false)
                 {
                     //pegar as informações 
-                    bool validarCadastro = ConsultasUsuario.AtualizarUsuario(nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
+                    bool validarCadastro = ConsultasUsuario.AtualizarUsuario(email, senha, nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
                     if (validarCadastro == true)
                     {
                         CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
