@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace cardio_em_dia
 {
     /// <summary>
-    /// Lógica interna para FrmSubDiarioDoDia.xaml
+    /// Lógica interna para FrmAcompanhamentoPressao.xaml
     /// </summary>
-    public partial class FrmSubDiarioDoDia : Window
+    public partial class FrmAcompanhamentoPressao : Window
     {
-        public FrmSubDiarioDoDia()
+        public FrmAcompanhamentoPressao()
         {
             InitializeComponent();
-        }
-
-        private void VoltarParaODiario(object sender, RoutedEventArgs e)
-        {
-            FrmDiario frmDiario = new FrmDiario();
-            frmDiario.Show();
-            Close();
         }
     }
 }

@@ -5,35 +5,124 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmClinicasEContatos" Height="850" Width="440"
+        Title="FrmClinicasEContatos" Height="880" Width="440"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Image Margin="1,0,1,720" Source="/cc.jpg" Stretch="UniformToFill"/>
-        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF18E187">
+    <Grid Background="White">
+        <Image HorizontalAlignment="Left" Height="830" VerticalAlignment="Top" Width="446" Source="/cc.jpg">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/cc.jpg"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="btnContato" Content="" HorizontalAlignment="Center" Height="71" Margin="0,185,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy" Content="" HorizontalAlignment="Center" Height="71" Margin="0,113,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy1" Content="" HorizontalAlignment="Center" Height="71" Margin="0,258,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy2" Content="" HorizontalAlignment="Center" Height="71" Margin="0,333,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy3" Content="" HorizontalAlignment="Center" Height="71" Margin="0,405,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy4" Content="" HorizontalAlignment="Center" Height="71" Margin="0,479,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy5" Content="" HorizontalAlignment="Center" Height="71" Margin="0,551,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy6" Content="" HorizontalAlignment="Center" Height="71" Margin="0,628,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy7" Content="" HorizontalAlignment="Center" Height="71" Margin="0,699,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnContato_Copy8" Content="" HorizontalAlignment="Center" Height="71" Margin="0,775,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imgImagemDoContato0" HorizontalAlignment="Left" Height="77" Margin="0,183,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+
+        <Image x:Name="imgImagemDoContato0_Copy" HorizontalAlignment="Left" Height="78" Margin="0,331,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy1" HorizontalAlignment="Left" Height="77" Margin="0,405,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy2" HorizontalAlignment="Left" Height="77" Margin="0,477,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy3" HorizontalAlignment="Left" Height="77" Margin="0,112,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy4" HorizontalAlignment="Left" Height="77" Margin="0,256,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy5" HorizontalAlignment="Left" Height="77" Margin="0,550,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy6" HorizontalAlignment="Left" Height="77" Margin="0,623,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy7" HorizontalAlignment="Left" Height="77" Margin="0,770,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgImagemDoContato0_Copy8" HorizontalAlignment="Left" Height="77" Margin="0,697,0,0" VerticalAlignment="Top" Width="73" Source="/ClinicaContato.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/ClinicaContato.png"/>
+            </Image.OpacityMask>
+        </Image>
+
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="45" Width="53" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF18E187">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
         <TextBox x:Name="txtPesquisa" HorizontalAlignment="Center" Margin="0,79,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="420" Height="33" Visibility="Hidden"/>
-        <TextBlock x:Name="txtNomeDoContato0" HorizontalAlignment="Left" Margin="84,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="25" Width="175" FontSize="24"/>
-        <Image x:Name="imgImagemDoContato0" HorizontalAlignment="Left" Height="49" Margin="12,143,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy" HorizontalAlignment="Left" Height="49" Margin="12,227,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy1" HorizontalAlignment="Left" Height="49" Margin="12,310,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy2" HorizontalAlignment="Left" Height="49" Margin="12,394,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy3" HorizontalAlignment="Left" Height="49" Margin="12,477,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy4" HorizontalAlignment="Left" Height="50" Margin="12,560,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy5" HorizontalAlignment="Left" Height="49" Margin="12,644,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy6" HorizontalAlignment="Left" Height="49" Margin="12,727,0,0" VerticalAlignment="Top" Width="50"/>
-        <Image x:Name="imgImagemDoContato0_Copy7" HorizontalAlignment="Left" Height="48" Margin="12,810,0,0" VerticalAlignment="Top" Width="50"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy" HorizontalAlignment="Left" Margin="84,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="25" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy1" HorizontalAlignment="Left" Margin="84,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy2" HorizontalAlignment="Left" Margin="84,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy3" HorizontalAlignment="Left" Margin="84,487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy4" HorizontalAlignment="Left" Margin="84,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy5" HorizontalAlignment="Left" Margin="84,653,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy6" HorizontalAlignment="Left" Margin="84,737,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
-        <TextBlock x:Name="txtNomeDoContato0_Copy7" HorizontalAlignment="Left" Margin="84,820,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Text="NomeDoPerfil" Height="26" Width="175" FontSize="24"/>
+        <Rectangle Height="3" Margin="0,57,0,0" Stroke="#FF1BE084" VerticalAlignment="Top" Fill="#FF1BE084"/>
         <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
         <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
             <Button.Background>
@@ -55,6 +144,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
+        <Rectangle Height="57" Margin="367,0,0,0" Stroke="#FF1BE084" VerticalAlignment="Top" Fill="#FF1BE084"/>
         <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
             <Button.OpacityMask>
                 <ImageBrush/>

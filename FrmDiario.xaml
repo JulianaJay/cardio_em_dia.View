@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmDiario" Height="850" Width="440"
+        Title="FrmDiario" Height="870" Width="440"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="0,0,1,0" Source="/Tela do Diário do paciente - CardioEmDia.jpg" Stretch="UniformToFill" Height="833" VerticalAlignment="Center" HorizontalAlignment="Right" Width="438"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Tela do Diário do paciente - CardioEmDia.jpg"/>
+        </Grid.Background>
         <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible">
             <Button.BorderBrush>
                 <ImageBrush/>
@@ -18,82 +20,82 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn01" Content="" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn01" Content="" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn02" Content="" HorizontalAlignment="Left" Margin="14,257,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn02" Content="" HorizontalAlignment="Left" Margin="14,233,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn03" Content="" HorizontalAlignment="Left" Margin="14,296,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn03" Content="" HorizontalAlignment="Left" Margin="14,272,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn04" Content="" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn04" Content="" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn05" Content="" HorizontalAlignment="Center" Margin="0,374,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn05" Content="" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn06" Content="" HorizontalAlignment="Center" Margin="0,413,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn06" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia" Margin="0,390,0,0">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn07" Content="" HorizontalAlignment="Left" Margin="14,452,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn07" Content="" HorizontalAlignment="Left" Margin="14,428,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn08" Content="" HorizontalAlignment="Center" Margin="0,492,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn08" Content="" HorizontalAlignment="Center" Margin="0,468,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn09" Content="" HorizontalAlignment="Center" Margin="0,530,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn09" Content="" HorizontalAlignment="Center" Margin="0,506,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn10" Content="" HorizontalAlignment="Center" Margin="0,569,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn10" Content="" HorizontalAlignment="Center" Margin="0,545,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn11" Content="" HorizontalAlignment="Left" Margin="14,608,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn11" Content="" HorizontalAlignment="Left" Margin="14,584,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Margin="14,646,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Margin="14,622,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn13" Content="" HorizontalAlignment="Center" Margin="0,686,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn13" Content="" HorizontalAlignment="Center" Margin="0,662,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,724,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="32" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,700,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="32" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Margin="14,764,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Margin="14,740,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btn16" Content="" HorizontalAlignment="Center" Margin="0,801,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
+        <Button x:Name="btn16" Content="" HorizontalAlignment="Center" Margin="0,777,0,0" VerticalAlignment="Top" BorderBrush="#EEFFEEFF" Width="416" Height="31" Click="AbrirDiarioDoDia">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
