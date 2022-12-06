@@ -8,9 +8,6 @@
         Title="FrmTelaPerfil" Height="850" Width="440"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
-    <Window.Background>
-        <ImageBrush ImageSource="/1perfil.jpg"/>
-    </Window.Background>
     <Grid>
         
     </Grid>

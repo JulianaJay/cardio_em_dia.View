@@ -5,30 +5,148 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmAgenda" Height="850" Width="440">
+        Title="FrmAgenda" Height="850" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="1,72,1,0" Source="/13.jpg" Height="833" VerticalAlignment="Top"/>
-        <Button x:Name="btn2" Content="" HorizontalAlignment="Center" Margin="0,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn3" Content="" HorizontalAlignment="Left" Margin="290,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn1" Content="" HorizontalAlignment="Left" Margin="38,212,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn5" Content="" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn4" Content="" HorizontalAlignment="Left" Margin="38,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn6" Content="" HorizontalAlignment="Left" Margin="290,307,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn8" Content="" HorizontalAlignment="Center" Margin="0,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn9" Content="" HorizontalAlignment="Left" Margin="290,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn7" Content="" HorizontalAlignment="Left" Margin="38,406,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn11" Content="" HorizontalAlignment="Center" Margin="0,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Margin="290,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn10" Content="" HorizontalAlignment="Left" Margin="38,503,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,601,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Margin="290,604,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn13" Content="" HorizontalAlignment="Left" Margin="38,604,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn17" Content="" HorizontalAlignment="Center" Margin="0,700,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn18" Content="" HorizontalAlignment="Left" Margin="290,703,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn16" Content="" HorizontalAlignment="Left" Margin="38,703,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn20" Content="" HorizontalAlignment="Center" Margin="0,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn19" Content="" HorizontalAlignment="Left" Margin="38,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Hidden"/>
-        <Button x:Name="btn21" Content="" HorizontalAlignment="Left" Margin="290,798,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" RenderTransformOrigin="1.549,1.711" Visibility="Hidden"/>
+        <Image Margin="0,62,2,0" Source="/13.jpg" Height="833" VerticalAlignment="Top"/>
+        <Button x:Name="btn2" Content="" HorizontalAlignment="Center" Margin="0,202,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn3" Content="" HorizontalAlignment="Left" Margin="289,202,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn1" Content="" HorizontalAlignment="Left" Margin="37,202,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn5" Content="" HorizontalAlignment="Center" Margin="0,297,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn4" Content="" HorizontalAlignment="Left" Margin="37,297,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn6" Content="" HorizontalAlignment="Left" Margin="289,297,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn8" Content="" HorizontalAlignment="Center" Margin="0,396,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn9" Content="" HorizontalAlignment="Left" Margin="289,396,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn7" Content="" HorizontalAlignment="Left" Margin="37,396,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn11" Content="" HorizontalAlignment="Center" Margin="0,493,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Margin="289,493,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn10" Content="" HorizontalAlignment="Left" Margin="37,493,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn14" Content="" HorizontalAlignment="Center" Margin="0,591,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Margin="289,594,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn13" Content="" HorizontalAlignment="Left" Margin="37,594,0,0" VerticalAlignment="Top" Height="83" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn17" Content="" HorizontalAlignment="Center" Margin="0,690,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn18" Content="" HorizontalAlignment="Left" Margin="289,693,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btn16" Content="" HorizontalAlignment="Left" Margin="37,693,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn20" Content="" HorizontalAlignment="Center" Margin="0,788,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn19" Content="" HorizontalAlignment="Left" Margin="37,788,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn21" Content="" HorizontalAlignment="Left" Margin="289,788,0,0" VerticalAlignment="Top" Height="82" Width="112" BorderBrush="White" RenderTransformOrigin="1.549,1.711" Visibility="Visible" Click="AbrirAgendaDoDia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Right" Height="64" VerticalAlignment="Top" Width="440" Source="/Captura de tela_20221201_204151.png" Stretch="UniformToFill"/>
+        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="0,7,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FFE4DFDF">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

@@ -5,9 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmMeditacaoERelaxamento" Height="850" Width="440">
+        Title="FrmMeditacaoERelaxamento" Height="850" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Image Margin="1,0,1,1"/>
+        <Image Source="/Tela de Meditação e Relaxamento - CardioEmDia.jpg" Margin="-2,10,-14,0" Height="860" VerticalAlignment="Top"/>
+        <Image Height="109" VerticalAlignment="Bottom" Source="/Captura de tela_20221202_140440.png" Margin="-4,0,0,749" HorizontalAlignment="Left" Width="460"/>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btnIniciarSecao01" Content="" HorizontalAlignment="Left" Margin="49,321,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIniciarSecao02" Content="" HorizontalAlignment="Left" Margin="49,417,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIniciarSecao03" Content="" HorizontalAlignment="Left" Margin="49,509,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIniciarSecao04" Content="" HorizontalAlignment="Left" Margin="49,602,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIniciarSecao05" Content="" HorizontalAlignment="Left" Margin="49,696,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIniciarSecao06" Content="" HorizontalAlignment="Left" Margin="49,790,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>

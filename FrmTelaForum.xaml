@@ -9,9 +9,6 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/1.jpg"/>
-        </Grid.Background>
-
+        
     </Grid>
 </Window>

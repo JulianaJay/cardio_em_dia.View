@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmAcompanhamentoMedico" Height="850" Width="440">
+        Title="FrmAcompanhamentoMedico" Height="850" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Image Margin="1,0,1,1" Source="/1.jpg" Stretch="UniformToFill"/>
         <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF1749C3">
@@ -39,12 +41,12 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnAcompanhamentoGlicose" Content="" HorizontalAlignment="Left" Margin="16,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDeGlicose" BorderBrush="#FFEFEFEF">
+        <Button x:Name="btnAcompanhamentoGlicose" Content="" HorizontalAlignment="Center" Margin="-208,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDeGlicose" BorderBrush="#FFEFEFEF">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnAcompanhamentoPressao" Content="" HorizontalAlignment="Left" Margin="230,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDePressao" BorderBrush="#FFEFEFEF">
+        <Button x:Name="btnAcompanhamentoPressao" Content="" HorizontalAlignment="Center" Margin="223,136,0,0" VerticalAlignment="Top" Height="350" Width="201" Click="AbrirTelaDeAcompanhamentoDePressao" BorderBrush="#FFEFEFEF">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

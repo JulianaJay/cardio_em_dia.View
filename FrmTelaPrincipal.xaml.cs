@@ -66,44 +66,85 @@ namespace cardio_em_dia
             Close();
         }
 
-        private void AbrirConfigNoMenu(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void FecharBarraMenu(object sender, RoutedEventArgs e)
         {
+            imgBarraDeTarefas.Visibility = Visibility.Hidden;
+            btnAbrirBarra.Visibility = Visibility.Hidden;
+            btnTelaPrincipal.Visibility = Visibility.Hidden;
+            btnForum.Visibility = Visibility.Hidden;
+            btnArtigos.Visibility = Visibility.Hidden;
+            btnPerfil.Visibility = Visibility.Hidden;
 
+            btnAbrirBarra.Visibility = Visibility.Visible;
+            btnAcompanhamento.Visibility = Visibility.Visible;
+            btnAgenda.Visibility = Visibility.Visible;
+            btnDiario.Visibility = Visibility.Visible;
+            btnMeditacao.Visibility = Visibility.Visible;
+            btnDietaSaude.Visibility = Visibility.Visible;
+            btnClinicas.Visibility = Visibility.Visible;
         }
 
         private void AbrirBarraDeTarefas(object sender, RoutedEventArgs e)
         {
+            imgBarraDeTarefas.Visibility = Visibility.Visible;
+            btnFecharBarra.Visibility = Visibility.Visible;
+            btnTelaPrincipal.Visibility = Visibility.Visible;
+            btnForum.Visibility = Visibility.Visible;
+            btnArtigos.Visibility = Visibility.Visible;
+            btnPerfil.Visibility = Visibility.Visible;
 
+            btnAcompanhamento.Visibility = Visibility.Hidden; 
+            btnAgenda.Visibility = Visibility.Hidden;
+            btnDiario.Visibility = Visibility.Hidden;
+            btnMeditacao.Visibility = Visibility.Hidden;
+            btnDietaSaude.Visibility = Visibility.Hidden;   
+            btnClinicas.Visibility = Visibility.Hidden; 
         }
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
         }
 
         private void AbrirTelaForum(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaForum frmTelaDoForum = new FrmTelaForum();
+            frmTelaDoForum.Show();
+            Close();
         }
 
         private void AbrirTelaArtigos(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaArtigos frmTelaDosArtigod = new FrmTelaArtigos();
+            frmTelaDosArtigod.Show();
+            Close();
         }
 
         private void AbrirTelaPerfil(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaPerfil frmTelaDePerfil = new FrmTelaPerfil();
+            frmTelaDePerfil.Show();
+            Close();
         }
 
         private void FecharBarraTarefas(object sender, RoutedEventArgs e)
         {
+            imgBarraDeTarefas.Visibility = Visibility.Hidden;
+            btnAbrirBarra.Visibility = Visibility.Hidden;
+            btnTelaPrincipal.Visibility = Visibility.Hidden;
+            btnForum.Visibility = Visibility.Hidden;
+            btnArtigos.Visibility = Visibility.Hidden;
+            btnPerfil.Visibility = Visibility.Hidden;
 
+            btnAbrirBarra.Visibility = Visibility.Visible;
+            btnAcompanhamento.Visibility = Visibility.Visible;
+            btnAgenda.Visibility = Visibility.Visible;
+            btnDiario.Visibility = Visibility.Visible;
+            btnMeditacao.Visibility = Visibility.Visible;
+            btnDietaSaude.Visibility = Visibility.Visible;
+            btnClinicas.Visibility = Visibility.Visible;
         }
     }
 }

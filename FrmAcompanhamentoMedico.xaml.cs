@@ -32,6 +32,10 @@ namespace cardio_em_dia
             btnForum.Visibility = Visibility.Visible;
             btnArtigos.Visibility = Visibility.Visible;
             btnPerfil.Visibility = Visibility.Visible;
+            btnAcompanhamentoConsumoD_Agua.Visibility = Visibility.Hidden;
+            btnAcompanhamentoGlicose.Visibility = Visibility.Hidden;
+            btnAcompanhamentoPressao.Visibility = Visibility.Hidden;
+            btnAcompanhamentoVacinas.Visibility = Visibility.Hidden;
         }
 
         private void FecharBarraTarefas(object sender, RoutedEventArgs e)
@@ -58,37 +62,51 @@ namespace cardio_em_dia
 
         private void AbrirTelaForum(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaForum frmTelaDoForum = new FrmTelaForum();
+            frmTelaDoForum.Show();
+            Close();
         }
 
         private void AbrirTelaArtigos(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaArtigos frmTelaDosArtigod = new FrmTelaArtigos();
+            frmTelaDosArtigod.Show();
+            Close();
         }
 
         private void AbrirTelaPerfil(object sender, RoutedEventArgs e)
         {
-
+            FrmTelaPerfil frmTelaDePerfil = new FrmTelaPerfil();
+            frmTelaDePerfil.Show();
+            Close();
         }
 
         private void AbrirTelaDeAcompanhamentoDeGlicose(object sender, RoutedEventArgs e)
         {
-
+            FrmSubAcompanhamentoGlicose frmAcompanhamentoGlicose = new FrmSubAcompanhamentoGlicose();
+            frmAcompanhamentoGlicose.Show();
+            Close();
         }
 
         private void AbrirTelaDeAcompanhamentoDePressao(object sender, RoutedEventArgs e)
         {
-
+            FrmSubAcompanhamentoPressao frmAcompanhamentoPressao = new FrmSubAcompanhamentoPressao();
+            frmAcompanhamentoPressao.Show();
+            Close();
         }
 
         private void AbrirTelaDeAcompanhamentoDeVacinas(object sender, RoutedEventArgs e)
         {
-
+            FrmSubCompanhamentoVacinas frmAcompanhamentoVacinas = new FrmSubCompanhamentoVacinas();
+            frmAcompanhamentoVacinas.Show();
+            Close();
         }
 
         private void AbrirTelaDeAcompanhamentoConsumoDeAgua(object sender, RoutedEventArgs e)
         {
-
+            FrmSubAcompanhamentoAgua frmAcompanhamentoAgua = new FrmSubAcompanhamentoAgua();
+            frmAcompanhamentoAgua.Show();
+            Close();
         }
     }
 }

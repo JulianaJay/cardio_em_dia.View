@@ -116,12 +116,12 @@
                 <ImageBrush ImageSource="/Captura de tela 2022-11-25 162508.jpg"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnConfigMenu" Content="" HorizontalAlignment="Left" Height="27" Margin="18,19,0,0" VerticalAlignment="Top" Width="36" BorderBrush="{x:Null}" Click="AbrirConfigNoMenu">
+        <Button x:Name="btnConfigMenu" Content="" HorizontalAlignment="Left" Height="28" Margin="21,21,0,0" VerticalAlignment="Top" Width="36" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Config.PNG"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Height="52" Width="61" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF1749C3">
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FF5285FF">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

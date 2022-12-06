@@ -5,9 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cardio_em_dia"
         mc:Ignorable="d"
-        Title="FrmDietaESaude" Height="850" Width="440">
+        Title="FrmDietaESaude" Height="850" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Image Margin="1,0,1,1"/>
+        <Image Source="/Tela de Dieta e Saúde - CardioEmDia.jpg" Margin="-8,0,-9,0" Height="860" VerticalAlignment="Top"/>
+        <Image Height="100" VerticalAlignment="Top" Source="/Captura de tela_20221202_132344.png"/>
+        <Image Height="24" Margin="0,65,0,0" VerticalAlignment="Top" Source="/Captura de tela_20221202_132733.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="419,0,0,0" VerticalAlignment="Top" Width="21" Source="/Captura de tela_20221202_133007.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="419,50,0,0" VerticalAlignment="Top" Width="21" Source="/Captura de tela_20221202_133007.png" Stretch="UniformToFill"/>
+        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="9,9,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible" BorderBrush="#FFFF526A">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCafeDaManha" Content="" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="363" Height="101" Click="AbrirTelaCafeDaManha">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnLancheDaManha" Content="" HorizontalAlignment="Center" Margin="0,228,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaLancheDaManha">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnAlmoco" Content="" HorizontalAlignment="Left" Margin="40,342,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaAlmoco">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnLancheDaTarde" Content="" HorizontalAlignment="Center" Margin="0,457,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaLancheDaTarde">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnJantar" Content="" HorizontalAlignment="Center" Margin="0,571,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaJantar">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnCeia" Content="" HorizontalAlignment="Center" Margin="0,685,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaCeia">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>
