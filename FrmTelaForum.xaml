@@ -9,6 +9,9 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/ForumTela.PNG"/>
+        </Grid.Background>
+
     </Grid>
 </Window>
