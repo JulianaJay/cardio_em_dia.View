@@ -126,28 +126,28 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Visible"/>
-        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Visible">
+        <Image x:Name="imgBarraDeTarefas" HorizontalAlignment="Left" Height="832" VerticalAlignment="Top" Width="355" Source="/Captura de tela 2022-12-01 151843.jpg" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Button x:Name="btnTelaPrincipal" Content="" HorizontalAlignment="Left" Margin="31,140,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPrincipal" BorderBrush="#FFEFEFEF" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Visible">
+        <Button x:Name="btnForum" Content="" HorizontalAlignment="Left" Margin="31,208,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaForum" BorderBrush="#FFEFEFEF" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Visible">
+        <Button x:Name="btnArtigos" Content="" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaArtigos" RenderTransformOrigin="0.495,3.379" BorderBrush="#FFEFEFEF" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Visible">
+        <Button x:Name="btnPerfil" Content="" HorizontalAlignment="Left" Margin="31,342,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="AbrirTelaPerfil" BorderBrush="#FFEFEFEF" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Visible">
+        <Button x:Name="btnFecharBarra" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Center" Height="834" Width="84" Margin="355,0,0,0" Click="FecharBarraTarefas" Visibility="Hidden">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>

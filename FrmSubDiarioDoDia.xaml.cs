@@ -28,7 +28,7 @@ namespace cardio_em_dia
         {
             FrmDiario frmDiario = new FrmDiario();
             frmDiario.Show();
-            Clode();
+            Close();
         }
     }
 }

@@ -9,6 +9,70 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image Height="835" VerticalAlignment="Top" Source="/Tela de Perfil - CardioEmDia.png" Stretch="None"/>
+        <Button x:Name="btnAbrirPopUp" Content="" HorizontalAlignment="Center" Margin="368,19,0,0" VerticalAlignment="Top" Width="30" Height="28" Click="AbrirPopUp">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Image x:Name="imgPopUp" Height="96" Margin="306,19,33,0" VerticalAlignment="Top" Source="/Captura de tela 2022-12-06 133134.jpg" Stretch="UniformToFill" Visibility="Hidden" HorizontalAlignment="Center"/>
+        <Border x:Name="brdBordaPopUp" BorderBrush="#FFE2E2E2" BorderThickness="1" Margin="305,18,19,718" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" HorizontalAlignment="Stretch"
+                >
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.042"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Button x:Name="btnVoltarParaATelaInicial" Content="Voltar" HorizontalAlignment="Center" Margin="222,27,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="10" Click="VoltarParaATelaPrincipal" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnAlterarConta" Content="Alterar sua Conta" HorizontalAlignment="Center" Margin="277,47,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="10" Click="AbrirTelaAlterarConta" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnExcluirConta" Content="Excluir conta" HorizontalAlignment="Center" Margin="255,68,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="10" Click="ExcluirConta" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnFecharPopUp" Content="Fechar" HorizontalAlignment="Center" Margin="228,89,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="10" Click="FecharPopUp" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnSair" Content="Button" HorizontalAlignment="Left" Margin="52,794,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="VoltarParaATelaPrincipal">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+
     </Grid>
 </Window>

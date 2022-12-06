@@ -88,7 +88,71 @@ namespace cardio_em_dia.Model
 
             return foiAtualizado;
         }
-        
+
+        public static bool AtualizarSenhaUsuario(string email, string senha)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool senhaAtualizada = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+                string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
+
+                comando.CommandText = @"
+                    UPDATE Usuario
+                    SET senha = @senha
+                    WHERE email = @email and senha = @senha";
+
+                comando.Parameters.AddWithValue("@email", email);
+                comando.Parameters.AddWithValue("@senha", senhaCriptografada);
+
+                var leitura = comando.ExecuteReader();
+
+                senhaAtualizada = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return senhaAtualizada;
+        }
+        public static bool ExcluirUsuario(string email)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool foiExcluido = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+                comando.CommandText = @"
+                DELETE FROM Usuario WHERE email = @email";
+                comando.Parameters.AddWithValue("@email", email);
+                var leitura = comando.ExecuteReader();
+                foiExcluido = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return foiExcluido;
+        }
         public static Usuario ObterUsuario(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);

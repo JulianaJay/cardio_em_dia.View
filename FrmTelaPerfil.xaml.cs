@@ -23,5 +23,50 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void AbrirPopUp(object sender, RoutedEventArgs e)
+        {
+            imgPopUp.Visibility = Visibility.Visible;
+            brdBordaPopUp.Visibility = Visibility.Visible;
+            btnVoltarParaATelaInicial.Visibility = Visibility.Visible;
+            btnAlterarConta.Visibility = Visibility.Visible;
+            btnExcluirConta.Visibility = Visibility.Visible;
+            btnFecharPopUp.Visibility = Visibility.Visible;
+
+            btnAbrirPopUp.Visibility= Visibility.Hidden;
+        }
+
+        private void VoltarParaATelaPrincipal(object sender, RoutedEventArgs e)
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
+        }
+
+        private void AbrirTelaAlterarConta(object sender, RoutedEventArgs e)
+        {
+            FrmAlterarUsuario frmAlterarUsuario = new FrmAlterarUsuario();
+            frmAlterarUsuario.Show();
+            Close();
+        }
+
+        private void ExcluirConta(object sender, RoutedEventArgs e)
+        {
+            FrmExcluirUsuario frmExcluirUsuario = new FrmExcluirUsuario();
+            frmExcluirUsuario.Show();
+            Close();
+        }
+
+        private void FecharPopUp(object sender, RoutedEventArgs e)
+        {
+            imgPopUp.Visibility = Visibility.Hidden;
+            brdBordaPopUp.Visibility = Visibility.Hidden;
+            btnVoltarParaATelaInicial.Visibility = Visibility.Hidden;
+            btnAlterarConta.Visibility = Visibility.Hidden;
+            btnExcluirConta.Visibility = Visibility.Hidden;
+            btnFecharPopUp.Visibility = Visibility.Hidden;
+
+            btnAbrirPopUp.Visibility = Visibility.Visible;
+        }
     }
 }
