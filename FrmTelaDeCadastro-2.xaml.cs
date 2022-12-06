@@ -20,11 +20,16 @@ namespace cardio_em_dia
     /// </summary>
     public partial class FrmTelaDeCadastro_2 : Window
     {
-        public FrmTelaDeCadastro_2()
+        //Usuario usuarioLogado = new Usuario();
+        public FrmTelaDeCadastro_2(/*Usuario usuario*/)
         {
             InitializeComponent();
             AdicionaItensNoComboBoxEstadoDoUsuario();
             AdicionaItensNoComboBoxSexoDoUsuario();
+
+            //usuarioLogado = usuario;
+            //string emailUsuario = $"{usuarioLogado.email}";
+            //string senhaUsuario = $"{usuarioLogado.senha}";
         }
 
         private void AdicionaItensNoComboBoxEstadoDoUsuario()
@@ -57,6 +62,7 @@ namespace cardio_em_dia
             txtEstadoDoUsuario.Items.Add("SE");
             txtEstadoDoUsuario.Items.Add("TO");
         }
+
         private void AdicionaItensNoComboBoxSexoDoUsuario()
         {
             txtSexoDoUsuario1.Items.Add("Masculino");
@@ -67,10 +73,37 @@ namespace cardio_em_dia
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-            if (VerificarCampos() == true)
+            //Usuario usuario = new Usuario();
+            //CadastrarUsuario(usuario);
+        }
+
+        private bool VerificarCampos()
+        {
+            if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
             {
-                string email = "";
-                string senha = "";
+                return true;
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+                return false;
+            }
+        }
+
+        private void AbrirATelaPrincipal()
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
+        }
+
+        private void CadastrarUsuario(Usuario usuario)
+        {
+            /*if (VerificarCampos() == true)
+            {
+                usuarioLogado = usuario;
+                string email = $"{usuarioLogado.email}";
+                string senha = $"{usuarioLogado.senha}";
 
                 string nome = txtNomeDoUsuario.Text;
                 string sobrenome = txtSobrenomeDoUsuario.Text;
@@ -103,27 +136,7 @@ namespace cardio_em_dia
             else
             {
                 CaixaDeMensagem.ExibirMenssagemPreencherCampos();
-            }
-        }
-
-        private bool VerificarCampos()
-        {
-            if (txtNomeDoUsuario.Text != "" && txtSobrenomeDoUsuario.Text != "" && txtTelefoneDoUsuario.Text != "" && txtSexoDoUsuario1.Text != "" && txtCPFDoUsuario.Text != "" && txtCEPDoUsusario.Text != "" && txtEstadoDoUsuario.Text != "")
-            {
-                return true;
-            }
-            else
-            {
-                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
-                return false;
-            }
-        }
-
-        private void AbrirATelaPrincipal()
-        {
-            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
-            frmTelaPrincipal.Show();
-            Close();
+            }*/
         }
     }
 }

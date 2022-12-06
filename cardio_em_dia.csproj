@@ -27,6 +27,7 @@
     <None Remove="Captura de tela 2022-11-25 163022.jpg" />
     <None Remove="Captura de tela 2022-11-25 163112.jpg" />
     <None Remove="Captura de tela 2022-12-01 151843.jpg" />
+    <None Remove="Captura de tela 2022-12-06 133134.jpg" />
     <None Remove="Captura de tela_20221201_204151.png" />
     <None Remove="Captura de tela_20221202_132344.png" />
     <None Remove="Captura de tela_20221202_132733.png" />
@@ -66,6 +67,7 @@
     <None Remove="Tela de Conversa - CardioEmDia.jpg" />
     <None Remove="Tela de Dieta e Saúde - CardioEmDia.jpg" />
     <None Remove="Tela de Meditação e Relaxamento - CardioEmDia.jpg" />
+    <None Remove="Tela de Perfil - CardioEmDia.png" />
     <None Remove="Tela do Diário do paciente - CardioEmDia.jpg" />
     <None Remove="Telas.PNG" />
     <None Remove="TopCC.PNG" />
@@ -94,6 +96,7 @@
     <Resource Include="Captura de tela 2022-11-25 163022.jpg" />
     <Resource Include="Captura de tela 2022-11-25 163112.jpg" />
     <Resource Include="Captura de tela 2022-12-01 151843.jpg" />
+    <Resource Include="Captura de tela 2022-12-06 133134.jpg" />
     <Resource Include="Captura de tela_20221201_204151.png" />
     <Resource Include="Captura de tela_20221202_132344.png" />
     <Resource Include="Captura de tela_20221202_132733.png" />
@@ -133,6 +136,7 @@
     <Resource Include="Tela de Conversa - CardioEmDia.jpg" />
     <Resource Include="Tela de Dieta e Saúde - CardioEmDia.jpg" />
     <Resource Include="Tela de Meditação e Relaxamento - CardioEmDia.jpg" />
+    <Resource Include="Tela de Perfil - CardioEmDia.png" />
     <Resource Include="Tela do Diário do paciente - CardioEmDia.jpg" />
     <Resource Include="Telas.PNG" />
     <Resource Include="TopCC.PNG" />

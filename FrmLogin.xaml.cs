@@ -43,7 +43,7 @@ namespace cardio_em_dia
             if (VerificarCampos() == true)
             {
                 string email = txtEmailDoUsuario.Text;
-                string senha = txtSenhaDoUsuario.Text;
+                string senha = txtSenhaDoUsuario.Password;
                 Usuario usuario = ConsultasUsuario.ObterUsuario(email, senha);
                 if (usuario != null)
                 {
@@ -73,7 +73,7 @@ namespace cardio_em_dia
 
         private bool VerificarCampos()
         {
-            if (txtEmailDoUsuario.Text != "" && txtSenhaDoUsuario.Text != "")
+            if (txtEmailDoUsuario.Text != "" && txtSenhaDoUsuario.Password != "")
             {
                 return true;
             }

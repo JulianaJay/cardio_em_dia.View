@@ -52,5 +52,37 @@ namespace cardio_em_dia.Model
             MessageBoxButton.OK,
             MessageBoxImage.Error);
         }
+        public static void ExibirMensagemUsuarioAtualizado()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Usuario atualizado com sucesso",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ExibirMensagemErroUsuarioAtualizado()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Não foi possível atualizar o usuario, tente novamente mais tarde!",
+                        "Error!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Error);
+        }
+        public static void ExibirMensagemUsuarioExcluido()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Usuario excluido com sucesso",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ExibirMensagemErroUsuarioExcluido()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Não foi possível excluir o usuario, tente novamente mais tarde!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
     }
 }
