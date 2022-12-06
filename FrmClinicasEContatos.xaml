@@ -14,52 +14,52 @@
                 <ImageBrush ImageSource="/cc.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <Button x:Name="btnContato" Content="" HorizontalAlignment="Center" Height="71" Margin="0,185,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato" Content="" HorizontalAlignment="Center" Height="71" Margin="0,185,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa1">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy" Content="" HorizontalAlignment="Center" Height="71" Margin="0,113,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy" Content="" HorizontalAlignment="Center" Height="71" Margin="0,113,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy1" Content="" HorizontalAlignment="Center" Height="71" Margin="0,258,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy1" Content="" HorizontalAlignment="Center" Height="71" Margin="0,258,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa2">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy2" Content="" HorizontalAlignment="Center" Height="71" Margin="0,333,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy2" Content="" HorizontalAlignment="Center" Height="71" Margin="0,333,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa3">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy3" Content="" HorizontalAlignment="Center" Height="71" Margin="0,405,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy3" Content="" HorizontalAlignment="Center" Height="71" Margin="0,405,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa4">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy4" Content="" HorizontalAlignment="Center" Height="71" Margin="0,479,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy4" Content="" HorizontalAlignment="Center" Height="71" Margin="0,479,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa5">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy5" Content="" HorizontalAlignment="Center" Height="71" Margin="0,551,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy5" Content="" HorizontalAlignment="Center" Height="71" Margin="0,551,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa6">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy6" Content="" HorizontalAlignment="Center" Height="71" Margin="0,628,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy6" Content="" HorizontalAlignment="Center" Height="71" Margin="0,628,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa7">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy7" Content="" HorizontalAlignment="Center" Height="71" Margin="0,699,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy7" Content="" HorizontalAlignment="Center" Height="71" Margin="0,699,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa8">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnContato_Copy8" Content="" HorizontalAlignment="Center" Height="71" Margin="0,775,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}">
+        <Button x:Name="btnContato_Copy8" Content="" HorizontalAlignment="Center" Height="71" Margin="0,775,0,0" VerticalAlignment="Top" Width="420" BorderBrush="{x:Null}" Click="AbrirConversa9">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

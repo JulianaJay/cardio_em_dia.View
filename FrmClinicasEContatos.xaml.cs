@@ -73,5 +73,75 @@ namespace cardio_em_dia
             frmTelaDePerfil.Show();
             Close();
         }
+
+        private void AbrirConversa(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa1(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa2(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa3(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa4(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa5(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa6(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa7(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa8(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
+
+        private void AbrirConversa9(object sender, RoutedEventArgs e)
+        {
+            FrmSubClinicasContatos frmTelaSubClinica = new FrmSubClinicasContatos();
+            frmTelaSubClinica.Show();
+            Close();
+        }
     }
 }

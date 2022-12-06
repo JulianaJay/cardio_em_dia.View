@@ -45,6 +45,7 @@
     <None Remove="ClinicaContato.png" />
     <None Remove="Clinicas e Contatos.PNG" />
     <None Remove="Config.PNG" />
+    <None Remove="ConversaContato.PNG" />
     <None Remove="Dieta e saúde.PNG" />
     <None Remove="Diário.PNG" />
     <None Remove="glicose.jpg" />
@@ -110,6 +111,7 @@
     <Resource Include="ClinicaContato.png" />
     <Resource Include="Clinicas e Contatos.PNG" />
     <Resource Include="Config.PNG" />
+    <Resource Include="ConversaContato.PNG" />
     <Resource Include="Dieta e saúde.PNG" />
     <Resource Include="Diário.PNG" />
     <Resource Include="glicose.jpg" />
