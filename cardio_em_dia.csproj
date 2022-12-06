@@ -43,8 +43,10 @@
     <None Remove="cc1.jpg" />
     <None Remove="Ceia.jpg" />
     <None Remove="Celular inferior.PNG" />
+    <None Remove="ClinicaContato.png" />
     <None Remove="Clinicas e Contatos.PNG" />
     <None Remove="Config.PNG" />
+    <None Remove="ConversaContato.PNG" />
     <None Remove="Dieta e saúde.PNG" />
     <None Remove="Diário.PNG" />
     <None Remove="glicose.jpg" />
@@ -67,7 +69,9 @@
     <None Remove="Tela de Perfil - CardioEmDia.png" />
     <None Remove="Tela do Diário do paciente - CardioEmDia.jpg" />
     <None Remove="Telas.PNG" />
+    <None Remove="TopCC.PNG" />
     <None Remove="tp3.jpg" />
+    <None Remove="UsuarioConversaImage1.png" />
     <None Remove="Voltar.PNG" />
   </ItemGroup>
 
@@ -107,8 +111,10 @@
     <Resource Include="cc1.jpg" />
     <Resource Include="Ceia.jpg" />
     <Resource Include="Celular inferior.PNG" />
+    <Resource Include="ClinicaContato.png" />
     <Resource Include="Clinicas e Contatos.PNG" />
     <Resource Include="Config.PNG" />
+    <Resource Include="ConversaContato.PNG" />
     <Resource Include="Dieta e saúde.PNG" />
     <Resource Include="Diário.PNG" />
     <Resource Include="glicose.jpg" />
@@ -131,7 +137,9 @@
     <Resource Include="Tela de Perfil - CardioEmDia.png" />
     <Resource Include="Tela do Diário do paciente - CardioEmDia.jpg" />
     <Resource Include="Telas.PNG" />
+    <Resource Include="TopCC.PNG" />
     <Resource Include="tp3.jpg" />
+    <Resource Include="UsuarioConversaImage1.png" />
     <Resource Include="Voltar.PNG" />
   </ItemGroup>
 

@@ -9,10 +9,10 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="1,0,1,1"/>
-        <Image Source="/Tela de Meditação e Relaxamento - CardioEmDia.jpg" Margin="-2,10,-14,0" Height="860" VerticalAlignment="Top"/>
-        <Image Height="109" VerticalAlignment="Bottom" Source="/Captura de tela_20221202_140440.png" Margin="-4,0,0,749" HorizontalAlignment="Left" Width="460"/>
-        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Tela de Meditação e Relaxamento - CardioEmDia.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnAbrirBarra" Content="" HorizontalAlignment="Left" Margin="8,6,0,0" VerticalAlignment="Top" Height="52" Width="62" RenderTransformOrigin="-0.232,0.326" Click="AbrirBarraDeTarefas" Visibility="Visible">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -46,7 +46,7 @@
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="btnIniciarSecao01" Content="" HorizontalAlignment="Left" Margin="49,321,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao01" Content="" HorizontalAlignment="Left" Margin="24,292,0,0" VerticalAlignment="Top" Width="380" Height="76" Click="IniciarSecao">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -54,7 +54,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnIniciarSecao02" Content="" HorizontalAlignment="Left" Margin="49,417,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao02" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Height="76" Click="IniciarSecao" Margin="24,383,0,0">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -62,7 +62,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnIniciarSecao03" Content="" HorizontalAlignment="Left" Margin="49,509,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao03" Content="" HorizontalAlignment="Left" Margin="24,472,0,0" VerticalAlignment="Top" Width="380" Height="76" Click="IniciarSecao">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -70,7 +70,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnIniciarSecao04" Content="" HorizontalAlignment="Left" Margin="49,602,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao04" Content="" HorizontalAlignment="Left" Margin="24,560,0,0" VerticalAlignment="Top" Width="380" Height="78" Click="IniciarSecao">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -78,7 +78,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnIniciarSecao05" Content="" HorizontalAlignment="Left" Margin="49,696,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao05" Content="" HorizontalAlignment="Left" Margin="24,650,0,0" VerticalAlignment="Top" Width="380" Height="78" Click="IniciarSecao">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -86,7 +86,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnIniciarSecao06" Content="" HorizontalAlignment="Left" Margin="49,790,0,0" VerticalAlignment="Top" Width="354" Height="80" Click="IniciarSecao">
+        <Button x:Name="btnIniciarSecao06" Content="" HorizontalAlignment="Left" Margin="24,740,0,0" VerticalAlignment="Top" Width="380" Height="78" Click="IniciarSecao">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

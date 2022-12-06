@@ -62,7 +62,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnAlmoco" Content="" HorizontalAlignment="Left" Margin="40,342,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaAlmoco">
+        <Button x:Name="btnAlmoco" Content="" HorizontalAlignment="Left" Margin="33,342,0,0" VerticalAlignment="Top" Width="366" Height="101" Click="AbrirTelaAlmoco">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
