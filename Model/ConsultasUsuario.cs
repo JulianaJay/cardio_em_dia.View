@@ -45,7 +45,7 @@ namespace cardio_em_dia.Model
             return foiInserido;
         }
 
-        public static bool AtualizarUsuario(string email, string senha, string nome, string sobrenome, string telefone, string sexo, int cpf, int cep, string uf)
+        public static bool AtualizarUsuario(string email, string nome, string sobrenome, string telefone, string sexo, string cpf, string cep, string uf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool foiAtualizado = false;
@@ -53,15 +53,14 @@ namespace cardio_em_dia.Model
             {
                 conexao.Open();
                 var comando = conexao.CreateCommand();
-                string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
 
                 comando.CommandText = @"
                     UPDATE Usuario
                     SET nome = @nome, sobrenome = @sobrenome, telefone = @telefone, sexo = @sexo, cpf = @cpf, cep = @cep, uf = @uf
                     WHERE email = @email";
-
+                
                 comando.Parameters.AddWithValue("@email", email);
-                comando.Parameters.AddWithValue("@senha", senhaCriptografada);
+
                 comando.Parameters.AddWithValue("@nome", nome);
                 comando.Parameters.AddWithValue("@sobrenome", sobrenome);
                 comando.Parameters.AddWithValue("@telefone", telefone);
@@ -221,7 +220,7 @@ namespace cardio_em_dia.Model
             return usuarioExiste;
         }
 
-        public static bool VerificarSeCPFExistente(int cpf)
+        public static bool VerificarSeCPFExistente(string cpf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             bool cpfExiste = false;

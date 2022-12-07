@@ -20,16 +20,13 @@ namespace cardio_em_dia
     /// </summary>
     public partial class FrmTelaDeCadastro_2 : Window
     {
-        //Usuario usuarioLogado = new Usuario();
-        public FrmTelaDeCadastro_2(/*Usuario usuario*/)
+        Usuario usuarioLogado = new Usuario();
+        public FrmTelaDeCadastro_2(Usuario usuario)
         {
             InitializeComponent();
+            usuarioLogado = usuario;
             AdicionaItensNoComboBoxEstadoDoUsuario();
             AdicionaItensNoComboBoxSexoDoUsuario();
-
-            //usuarioLogado = usuario;
-            //string emailUsuario = $"{usuarioLogado.email}";
-            //string senhaUsuario = $"{usuarioLogado.senha}";
         }
 
         private void AdicionaItensNoComboBoxEstadoDoUsuario()
@@ -73,8 +70,41 @@ namespace cardio_em_dia
 
         private void AbrirTelaPrincipal(object sender, RoutedEventArgs e)
         {
-            //Usuario usuario = new Usuario();
-            //CadastrarUsuario(usuario);
+            if (VerificarCampos() == true)
+            {
+                string email = $"{usuarioLogado.email}";
+
+                string nome = txtNomeDoUsuario.Text;
+                string sobrenome = txtSobrenomeDoUsuario.Text;
+                string telefone = txtTelefoneDoUsuario.Text;
+                string sexo = txtSexoDoUsuario1.Text;
+                string CPF = txtCPFDoUsuario.Text;
+                string CEP = txtCEPDoUsusario.Text;
+                string Estado = txtEstadoDoUsuario.Text;
+
+                bool cpfExiste = ConsultasUsuario.VerificarSeCPFExistente(CPF);
+                if (cpfExiste == false)
+                { 
+                    bool validarCadastro = ConsultasUsuario.AtualizarUsuario(email, nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
+                    if (validarCadastro == true)
+                    {
+                        CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
+                        AbrirATelaPrincipal();
+                    }
+                    else
+                    {
+                        CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
+                    }
+                }
+                else
+                {
+                    CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
+                }
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
+            }
         }
 
         private bool VerificarCampos()
@@ -95,48 +125,6 @@ namespace cardio_em_dia
             FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
             frmTelaPrincipal.Show();
             Close();
-        }
-
-        private void CadastrarUsuario(Usuario usuario)
-        {
-            /*if (VerificarCampos() == true)
-            {
-                usuarioLogado = usuario;
-                string email = $"{usuarioLogado.email}";
-                string senha = $"{usuarioLogado.senha}";
-
-                string nome = txtNomeDoUsuario.Text;
-                string sobrenome = txtSobrenomeDoUsuario.Text;
-                string telefone = txtTelefoneDoUsuario.Text;
-                string sexo = txtSexoDoUsuario1.Text;
-                int CPF = int.Parse(txtCPFDoUsuario.Text);
-                int CEP = int.Parse(txtCEPDoUsusario.Text);
-                string Estado = txtEstadoDoUsuario.Text;
-
-                bool cpfExiste = ConsultasUsuario.VerificarSeCPFExistente(CPF);
-                if (cpfExiste == false)
-                {
-                    //pegar as informações 
-                    bool validarCadastro = ConsultasUsuario.AtualizarUsuario(email, senha, nome, sobrenome, telefone, sexo, CPF, CEP, Estado);
-                    if (validarCadastro == true)
-                    {
-                        CaixaDeMensagem.ExibirMensagemUsuarioCadastrado();
-                        AbrirATelaPrincipal();
-                    }
-                    else
-                    {
-                        CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
-                    }
-                }
-                else
-                {
-                    CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
-                }
-            }
-            else
-            {
-                CaixaDeMensagem.ExibirMenssagemPreencherCampos();
-            }*/
         }
     }
 }

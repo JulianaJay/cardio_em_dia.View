@@ -71,7 +71,7 @@ namespace cardio_em_dia
                 }
                 else 
                 {
-                    CaixaDeMensagem.ExibirMensagemEmailJaExisteNoSistema();
+                    CaixaDeMensagem.ExibirMensagemErroUsuarioCadastrado();
                 }
             }
 
@@ -91,7 +91,10 @@ namespace cardio_em_dia
         }
         private void AbrirATelaDeCadastro2()
         {
-            FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2();
+            Usuario usuario = new Usuario();
+            usuario.email = txtEmailCadastro.Text;
+            usuario.senha = "";
+            FrmTelaDeCadastro_2 frmTelaDeCadastro2 = new FrmTelaDeCadastro_2(usuario);
             frmTelaDeCadastro2.Show();
             Close();
         }
