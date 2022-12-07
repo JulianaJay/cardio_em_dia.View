@@ -52,6 +52,7 @@
     <None Remove="ForumTela.PNG" />
     <None Remove="glicose.jpg" />
     <None Remove="Google__G__Logo.svg.png" />
+    <None Remove="HahaDriblados.PNG" />
     <None Remove="Janta.jpg" />
     <None Remove="LancheDaManha.jpg" />
     <None Remove="LancheDaTarde.jpg" />
@@ -121,6 +122,7 @@
     <Resource Include="ForumTela.PNG" />
     <Resource Include="glicose.jpg" />
     <Resource Include="Google__G__Logo.svg.png" />
+    <Resource Include="HahaDriblados.PNG" />
     <Resource Include="Janta.jpg" />
     <Resource Include="LancheDaManha.jpg" />
     <Resource Include="LancheDaTarde.jpg" />

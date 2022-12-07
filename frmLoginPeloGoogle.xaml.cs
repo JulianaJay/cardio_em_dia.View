@@ -30,5 +30,12 @@ namespace cardio_em_dia
             frmLogin.Show();
             Close();
         }
+
+        private void IrAoCadastro(object sender, MouseButtonEventArgs e)
+        {
+            FrmTelaDeCadastro_1 frmCadastro = new FrmTelaDeCadastro_1();
+            frmCadastro.Show();
+            Close();
+        }
     }
 }

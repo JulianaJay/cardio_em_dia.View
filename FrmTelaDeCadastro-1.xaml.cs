@@ -29,12 +29,14 @@ namespace cardio_em_dia
         {
             frmLoginPeloGoogle frmGoogle = new frmLoginPeloGoogle();
             frmGoogle.Show();
+            Close();
         }
 
         private void CadastrarPeloFacebook(object sender, RoutedEventArgs e)
         {
             frmLoginPeloFacebook frmFacebook = new frmLoginPeloFacebook();
             frmFacebook.Show();
+            Close();
         }
 
         private void AbrirTelaDeLogin(object sender, RoutedEventArgs e)

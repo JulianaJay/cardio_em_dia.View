@@ -18,6 +18,21 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
+        <Button x:Name="btnDiaCafe" Content="" HorizontalAlignment="Left" Margin="12,250,0,0" VerticalAlignment="Top" Height="97" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy" Content="" HorizontalAlignment="Left" Margin="298,250,0,0" VerticalAlignment="Top" Height="97" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy1" Content="" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Height="97" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy2" Content="" HorizontalAlignment="Left" Margin="12,358,0,0" VerticalAlignment="Top" Height="98" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy3" Content="" HorizontalAlignment="Left" Margin="298,358,0,0" VerticalAlignment="Top" Height="98" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy4" Content="" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Height="98" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy5" Content="" HorizontalAlignment="Left" Margin="12,470,0,0" VerticalAlignment="Top" Height="96" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy6" Content="" HorizontalAlignment="Left" Margin="298,472,0,0" VerticalAlignment="Top" Height="96" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy7" Content="" HorizontalAlignment="Center" Margin="0,470,0,0" VerticalAlignment="Top" Height="96" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy8" Content="" HorizontalAlignment="Left" Margin="12,582,0,0" VerticalAlignment="Top" Height="96" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy9" Content="" HorizontalAlignment="Left" Margin="298,582,0,0" VerticalAlignment="Top" Height="96" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy10" Content="" HorizontalAlignment="Center" Margin="0,581,0,0" VerticalAlignment="Top" Height="96" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy11" Content="" HorizontalAlignment="Left" Margin="12,691,0,0" VerticalAlignment="Top" Height="98" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy12" Content="" HorizontalAlignment="Left" Margin="298,693,0,0" VerticalAlignment="Top" Height="97" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
+        <Button x:Name="btnDiaCafe_Copy13" Content="" HorizontalAlignment="Center" Margin="0,693,0,0" VerticalAlignment="Top" Height="95" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaUmCafe"/>
 
     </Grid>
 </Window>
