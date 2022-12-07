@@ -30,11 +30,12 @@ namespace cardio_em_dia
             frmDietaESaude.Show();
             Close();
         }
-        private void DiaUmCafe(object sender, RoutedEventArgs e)
-        {
-            frmTelaDeObras FrmTelaDeObras = new frmTelaDeObras();
-            FrmTelaDeObras.Show();
-            Close();
 
+        private void DiaLancheM(object sender, RoutedEventArgs e)
+        {
+            frmTelaDeObras frmTelaDeObras = new frmTelaDeObras();
+            frmTelaDeObras.Show();
+            Close();
         }
+    }
 }
