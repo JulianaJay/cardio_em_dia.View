@@ -9,6 +9,41 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="440" Source="/Captura de tela 2022-12-07 154749.jpg" Stretch="UniformToFill"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Height="37" Width="52" Click="VoltarParaAcompanhamentoMedico">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="37,180,0,0" TextWrapping="Wrap" Text="200 ml - 08:00" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Language="pt-br" Text="10"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="1"/><Run Language="pt-br" Text="2"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="1"/><Run Language="pt-br" Text="4"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="1"/><Run Language="pt-br" Text="6"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="1"/><Run Language="pt-br" Text="8"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Language="pt-br" Text="20"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="2"/><Run Language="pt-br" Text="2"/><Run Text=":00"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="37,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - 0"/><Run Language="pt-br" Text="6"/><Run Text=":00"/></TextBlock>
+        <Button x:Name="btnPrimeiroHorario" Content="Button" HorizontalAlignment="Left" Margin="212,131,0,0" VerticalAlignment="Top" Click="PrimeiroHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy" Content="Button" HorizontalAlignment="Left" Margin="212,172,0,0" VerticalAlignment="Top" Click="SegundoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy1" Content="Button" HorizontalAlignment="Left" Margin="212,213,0,0" VerticalAlignment="Top" Click="TerceiroHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy2" Content="Button" HorizontalAlignment="Left" Margin="212,254,0,0" VerticalAlignment="Top" Click="QuartoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy3" Content="Button" HorizontalAlignment="Left" Margin="212,295,0,0" VerticalAlignment="Top" Click="QuintoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy4" Content="Button" HorizontalAlignment="Left" Margin="212,336,0,0" VerticalAlignment="Top" Click="SextoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy5" Content="Button" HorizontalAlignment="Left" Margin="212,376,0,0" VerticalAlignment="Top" Click="SetimoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy6" Content="Button" HorizontalAlignment="Left" Margin="212,418,0,0" VerticalAlignment="Top" Click="OitavoHorario" Height="36" Width="46"/>
+        <Button x:Name="btnPrimeiroHorario_Copy7" Content="Button" HorizontalAlignment="Left" Margin="212,459,0,0" VerticalAlignment="Top" Click="NonoHorario" Height="36" Width="46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="88,651,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold"><Run Text="Total"/><Run Language="pt-br" Text=":"/></TextBlock>
+        <TextBox x:Name="txtTotalDeAguaDoDia" HorizontalAlignment="Left" Margin="175,643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
+        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="37,558,0,0" VerticalAlignment="Top" Width="375" Click="Limpar" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,697,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold" Width="35" Text="Id:"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="175,689,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
+
     </Grid>
 </Window>

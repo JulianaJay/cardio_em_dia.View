@@ -84,5 +84,37 @@ namespace cardio_em_dia.Model
                         MessageBoxButton.OK,
                         MessageBoxImage.Information);
         }
+        public static void ConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Consumo d'água foi atualizado com sucesso!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ErroConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Não foi possível atulizar seu consumo d'água!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ExcluirConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Consumo d'água foi excluído com sucesso!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ErroExcluirConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Não foi possível excluir seu consumo d'água!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
     }
 }

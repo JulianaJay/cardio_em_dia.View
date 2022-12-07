@@ -44,7 +44,6 @@ namespace cardio_em_dia.Model
 
             return foiInserido;
         }
-
         public static bool AtualizarUsuario(string email, string nome, string sobrenome, string telefone, string sexo, string cpf, string cep, string uf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
@@ -87,7 +86,6 @@ namespace cardio_em_dia.Model
 
             return foiAtualizado;
         }
-
         public static bool AtualizarSenhaUsuario(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
@@ -187,7 +185,6 @@ namespace cardio_em_dia.Model
             }
             return usuario;
         }
-
         public static bool VerificarUsuarioExistente(string email)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
@@ -219,7 +216,6 @@ namespace cardio_em_dia.Model
             }
             return usuarioExiste;
         }
-
         public static bool VerificarSeCPFExistente(string cpf)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
@@ -250,6 +246,71 @@ namespace cardio_em_dia.Model
                 }
             }
             return cpfExiste;
+        }
+
+
+
+
+        public static bool AdicionarConsumoDeAgua(string qtd)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool foiInserido = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+
+
+                comando.CommandText = @"
+                INSERT INTO ConsumoDeAgua (qtd) 
+                VALUES(@qtd)";
+                comando.Parameters.AddWithValue("@qtd", qtd);
+
+                var leitura = comando.ExecuteReader();
+
+                foiInserido = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return foiInserido;
+        }
+        public static bool ExcluirConsumoDeAgua(int id)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool foiExcluido = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+                comando.CommandText = @"
+                DELETE FROM Usuario WHERE id = @id";
+                comando.Parameters.AddWithValue("@id", id);
+                var leitura = comando.ExecuteReader();
+                foiExcluido = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return foiExcluido;
         }
     }
 }

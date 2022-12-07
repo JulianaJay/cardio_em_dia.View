@@ -104,7 +104,7 @@ namespace cardio_em_dia
 
         private void AbrirTelaDeAcompanhamentoConsumoDeAgua(object sender, RoutedEventArgs e)
         {
-            FrmSubAcompanhamentoAgua frmAcompanhamentoAgua = new FrmSubAcompanhamentoAgua();
+            FrmAcompanhamentoConsumoDeAgua frmAcompanhamentoAgua = new FrmAcompanhamentoConsumoDeAgua();
             frmAcompanhamentoAgua.Show();
             Close();
         }

@@ -37,4 +37,5 @@ namespace cardio_em_dia
             Close();
 
         }
+    }
 }
