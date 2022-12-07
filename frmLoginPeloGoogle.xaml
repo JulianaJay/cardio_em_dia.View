@@ -10,12 +10,13 @@
         WindowStartupLocation="CenterScreen">
     <Grid Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="259*"/>
-            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="52*"/>
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Height="487" Margin="20,0,0,0" VerticalAlignment="Center" Width="422" Source="/LogGoogle.PNG" Grid.ColumnSpan="2"/>
         <Grid Background="White" Grid.ColumnSpan="2">
             <Image HorizontalAlignment="Center" Height="549" Margin="0,13,0,0" VerticalAlignment="Top" Width="408" Source="/LogGoogle.PNG"/>
+            <Image HorizontalAlignment="Left" Height="41" Margin="46,354,0,0" VerticalAlignment="Top" Width="96" Source="/HahaDriblados.PNG" MouseLeftButtonDown="IrAoCadastro"/>
         </Grid>
     </Grid>
 </Window>
