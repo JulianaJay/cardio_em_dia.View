@@ -18,7 +18,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnDiaCafe" Content="" HorizontalAlignment="Left" Margin="12,228,0,0" VerticalAlignment="Top" Height="97" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaLancheT"/>
+        <Button x:Name="btnLancheT" Content="" HorizontalAlignment="Left" Margin="12,228,0,0" VerticalAlignment="Top" Height="97" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaLancheT"/>
         <Button x:Name="btnDiaCafe_Copy" Content="" HorizontalAlignment="Left" Margin="298,228,0,0" VerticalAlignment="Top" Height="97" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaLancheT"/>
         <Button x:Name="btnDiaCafe_Copy1" Content="" HorizontalAlignment="Center" Margin="0,228,0,0" VerticalAlignment="Top" Height="97" Width="132" Background="{x:Null}" BorderBrush="White" Click="DiaLancheT"/>
         <Button x:Name="btnDiaCafe_Copy2" Content="" HorizontalAlignment="Left" Margin="12,338,0,0" VerticalAlignment="Top" Height="98" Width="131" Background="{x:Null}" BorderBrush="White" Click="DiaLancheT"/>

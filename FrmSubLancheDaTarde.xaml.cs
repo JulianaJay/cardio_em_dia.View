@@ -31,7 +31,7 @@ namespace cardio_em_dia
             Close();
         }
 
-        private void DiaUmCafe(object sender, RoutedEventArgs e)
+        private void DiaLancheT(object sender, RoutedEventArgs e)
         {
 
         }

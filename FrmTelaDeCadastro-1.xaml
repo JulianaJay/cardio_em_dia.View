@@ -31,7 +31,7 @@
         <TextBlock HorizontalAlignment="Left" Height="23" Margin="41,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="E-MAIL"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="23" Margin="41,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="SENHA"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="23" Margin="41,502,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontFamily="Arial Rounded MT Bold" TextAlignment="Left" FontSize="16" FontWeight="Normal" Foreground="#FF6F6F6F"><Run Language="pt-br" Text="CONFIRMAR "/><Run Text="SENHA"/></TextBlock>
-        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="218,621,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloGoogle" RenderTransformOrigin="0.398,0.524">
+        <Button x:Name="BtnFacebook" Content="" HorizontalAlignment="Left" Height="54" Margin="218,621,0,0" VerticalAlignment="Top" Width="173" Foreground="White" Click="CadastrarPeloFacebook" RenderTransformOrigin="0.398,0.524">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
