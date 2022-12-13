@@ -35,10 +35,5 @@ namespace cardio_em_dia
         {
 
         }
-
-        private void DiaLancheT(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

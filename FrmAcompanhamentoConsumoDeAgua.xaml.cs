@@ -21,7 +21,6 @@ namespace cardio_em_dia
     public partial class FrmAcompanhamentoConsumoDeAgua : Window
     {
         int total = 0;
-        int consumoHora = 0;
         public FrmAcompanhamentoConsumoDeAgua()
         {
             InitializeComponent();
@@ -111,10 +110,11 @@ namespace cardio_em_dia
 
         private void Limpar(object sender, RoutedEventArgs e)
         {
+            total = 0;
             txtTotalDeAguaDoDia.Text = "";
 
-            string id = txtID.Text;
-            bool validarExclusao = ConsultasUsuario.ExcluirUsuario(id);
+            int id = int.Parse(txtID.Text);
+            bool validarExclusao = ConsultasUsuario.ExcluirConsumoDeAgua(id);
             if (validarExclusao == true)
             {
                 CaixaDeMensagem.ExcluirConsumoDeAgua();
@@ -122,6 +122,22 @@ namespace cardio_em_dia
             else
             {
                 CaixaDeMensagem.ErroExcluirConsumoDeAgua();
+            }
+        }
+
+        private void Atualizar(object sender, RoutedEventArgs e)
+        {
+            string qtd = txtTotalDeAguaDoDia.Text;
+            int id = int.Parse(txtID.Text);
+
+            bool validarAlteracao = ConsultasUsuario.AtualizarConsumoDaAgua(id, qtd);
+            if (validarAlteracao == true)
+            {
+                CaixaDeMensagem.ExibirMensagemUsuarioAtualizado();
+            }
+            else
+            {
+                CaixaDeMensagem.ExibirMensagemErroUsuarioAtualizado();
             }
         }
     }

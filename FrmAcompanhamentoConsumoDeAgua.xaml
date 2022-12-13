@@ -41,9 +41,10 @@
         <Button x:Name="btnPrimeiroHorario_Copy7" Content="Button" HorizontalAlignment="Left" Margin="212,459,0,0" VerticalAlignment="Top" Click="NonoHorario" Height="36" Width="46"/>
         <TextBlock HorizontalAlignment="Left" Margin="88,651,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold"><Run Text="Total"/><Run Language="pt-br" Text=":"/></TextBlock>
         <TextBox x:Name="txtTotalDeAguaDoDia" HorizontalAlignment="Left" Margin="175,643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
-        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="37,558,0,0" VerticalAlignment="Top" Width="375" Click="Limpar" Height="35"/>
+        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="37,534,0,0" VerticalAlignment="Top" Width="375" Click="Limpar" Height="35"/>
         <TextBlock HorizontalAlignment="Left" Margin="114,697,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold" Width="35" Text="Id:"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="175,689,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
+        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="37,574,0,0" VerticalAlignment="Top" Width="375" Click="Atualizar" Height="35"/>
 
     </Grid>
 </Window>

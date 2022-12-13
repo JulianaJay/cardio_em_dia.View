@@ -293,7 +293,7 @@ namespace cardio_em_dia.Model
                 conexao.Open();
                 var comando = conexao.CreateCommand();
                 comando.CommandText = @"
-                DELETE FROM Usuario WHERE id = @id";
+                DELETE FROM ConsumoDeAgua WHERE id = @id";
                 comando.Parameters.AddWithValue("@id", id);
                 var leitura = comando.ExecuteReader();
                 foiExcluido = true;
@@ -311,6 +311,42 @@ namespace cardio_em_dia.Model
             }
 
             return foiExcluido;
+        }
+
+        public static bool AtualizarConsumoDaAgua(int id, string qtd)
+        {
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+            bool foiAtualizado = false;
+            try
+            {
+                conexao.Open();
+                var comando = conexao.CreateCommand();
+
+                comando.CommandText = @"
+                    UPDATE ConsumoDeAgua
+                    SET qtd = @qtd
+                    WHERE id = @id";
+
+                comando.Parameters.AddWithValue("@id", id);
+                comando.Parameters.AddWithValue("@qtd", qtd);
+
+                var leitura = comando.ExecuteReader();
+
+                foiAtualizado = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return foiAtualizado;
         }
     }
 }
