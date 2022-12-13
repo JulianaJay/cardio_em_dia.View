@@ -12,6 +12,17 @@
         <Grid.Background>
             <ImageBrush ImageSource="/ForumTela.PNG"/>
         </Grid.Background>
+        <Button x:Name="btnTelaPrincipal" Content="Button" HorizontalAlignment="Left" Margin="18,18,0,0" VerticalAlignment="Top" Height="27" Click="VoltarParaTelaPrincipal">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

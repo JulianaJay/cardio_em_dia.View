@@ -23,5 +23,12 @@ namespace cardio_em_dia
         {
             InitializeComponent();
         }
+
+        private void VoltarParaTelaPrincipal(object sender, RoutedEventArgs e)
+        {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
+            Close();
+        }
     }
 }
