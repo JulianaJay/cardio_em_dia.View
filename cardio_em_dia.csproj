@@ -50,6 +50,7 @@
     <None Remove="ConversaContato.PNG" />
     <None Remove="Dieta e saúde.PNG" />
     <None Remove="Diário.PNG" />
+    <None Remove="feito.jpg" />
     <None Remove="ForumTela.PNG" />
     <None Remove="glicose.jpg" />
     <None Remove="Google__G__Logo.svg.png" />
@@ -121,6 +122,7 @@
     <Resource Include="ConversaContato.PNG" />
     <Resource Include="Dieta e saúde.PNG" />
     <Resource Include="Diário.PNG" />
+    <Resource Include="feito.jpg" />
     <Resource Include="ForumTela.PNG" />
     <Resource Include="glicose.jpg" />
     <Resource Include="Google__G__Logo.svg.png" />

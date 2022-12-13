@@ -87,12 +87,28 @@ namespace cardio_em_dia.Model
         public static void ConsumoDeAgua()
         {
             MessageBoxResult result = MessageBox.Show(
-                        "Consumo d'água foi atualizado com sucesso!",
+                        "Consumo d'água salvo com sucesso!",
                         "Informação!",
                         MessageBoxButton.OK,
                         MessageBoxImage.Information);
         }
         public static void ErroConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Não foi possível salvar seu consumo d'água!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void AtualizarConsumoDeAgua()
+        {
+            MessageBoxResult result = MessageBox.Show(
+                        "Consumo d'água foi atualizado com sucesso!",
+                        "Informação!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+        }
+        public static void ErroAtualizarConsumoDeAgua()
         {
             MessageBoxResult result = MessageBox.Show(
                         "Não foi possível atulizar seu consumo d'água!",

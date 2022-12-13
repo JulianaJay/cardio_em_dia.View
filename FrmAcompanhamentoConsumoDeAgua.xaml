@@ -30,21 +30,34 @@
         <TextBlock HorizontalAlignment="Left" Margin="37,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Language="pt-br" Text="20"/><Run Text=":00"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="37,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - "/><Run Text="2"/><Run Language="pt-br" Text="2"/><Run Text=":00"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="37,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18"><Run Text="200 ml - 0"/><Run Language="pt-br" Text="6"/><Run Text=":00"/></TextBlock>
-        <Button x:Name="btnPrimeiroHorario" Content="Button" HorizontalAlignment="Left" Margin="212,131,0,0" VerticalAlignment="Top" Click="PrimeiroHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy" Content="Button" HorizontalAlignment="Left" Margin="212,172,0,0" VerticalAlignment="Top" Click="SegundoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy1" Content="Button" HorizontalAlignment="Left" Margin="212,213,0,0" VerticalAlignment="Top" Click="TerceiroHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy2" Content="Button" HorizontalAlignment="Left" Margin="212,254,0,0" VerticalAlignment="Top" Click="QuartoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy3" Content="Button" HorizontalAlignment="Left" Margin="212,295,0,0" VerticalAlignment="Top" Click="QuintoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy4" Content="Button" HorizontalAlignment="Left" Margin="212,336,0,0" VerticalAlignment="Top" Click="SextoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy5" Content="Button" HorizontalAlignment="Left" Margin="212,376,0,0" VerticalAlignment="Top" Click="SetimoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy6" Content="Button" HorizontalAlignment="Left" Margin="212,418,0,0" VerticalAlignment="Top" Click="OitavoHorario" Height="36" Width="46"/>
-        <Button x:Name="btnPrimeiroHorario_Copy7" Content="Button" HorizontalAlignment="Left" Margin="212,459,0,0" VerticalAlignment="Top" Click="NonoHorario" Height="36" Width="46"/>
-        <TextBlock HorizontalAlignment="Left" Margin="88,651,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold"><Run Text="Total"/><Run Language="pt-br" Text=":"/></TextBlock>
-        <TextBox x:Name="txtTotalDeAguaDoDia" HorizontalAlignment="Left" Margin="175,643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
-        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="37,534,0,0" VerticalAlignment="Top" Width="375" Click="Limpar" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" Margin="114,697,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold" Width="35" Text="Id:"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="175,689,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22"/>
-        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="37,574,0,0" VerticalAlignment="Top" Width="375" Click="Atualizar" Height="35"/>
+        <Button x:Name="btnPrimeiroHorario" Content="" HorizontalAlignment="Left" Margin="212,131,0,0" VerticalAlignment="Top" Click="PrimeiroHorario" Height="36" Width="46" BorderBrush="Black">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnSegundoHorario" Content="" HorizontalAlignment="Left" Margin="212,172,0,0" VerticalAlignment="Top" Click="SegundoHorario" Height="36" Width="46" Background="White" BorderBrush="Black"/>
+        <Button x:Name="btnTerceiroHorario" Content="" HorizontalAlignment="Left" Margin="212,213,0,0" VerticalAlignment="Top" Click="TerceiroHorario" Height="36" Width="46" Background="White" BorderBrush="Black"/>
+        <Button x:Name="btnQuartoHorario" Content="" HorizontalAlignment="Left" Margin="212,254,0,0" VerticalAlignment="Top" Click="QuartoHorario" Height="36" Width="46" BorderBrush="Black" Background="White"/>
+        <Button x:Name="btnQuintoHorario" Content="" HorizontalAlignment="Left" Margin="212,295,0,0" VerticalAlignment="Top" Click="QuintoHorario" Height="36" Width="46" Background="White" BorderBrush="Black"/>
+        <Button x:Name="btnSextoHorario" Content="" HorizontalAlignment="Left" Margin="212,336,0,0" VerticalAlignment="Top" Click="SextoHorario" Height="36" Width="46" BorderBrush="Black" Background="White"/>
+        <Button x:Name="btnSetimoHorario" Content="" HorizontalAlignment="Left" Margin="212,376,0,0" VerticalAlignment="Top" Click="SetimoHorario" Height="36" Width="46" Background="White" BorderBrush="Black"/>
+        <Button x:Name="btnOitavoHorario" Content="" HorizontalAlignment="Left" Margin="212,418,0,0" VerticalAlignment="Top" Click="OitavoHorario" Height="36" Width="46" BorderBrush="Black" Background="White"/>
+        <Button x:Name="btnNonoHorario" Content="" HorizontalAlignment="Left" Margin="212,459,0,0" VerticalAlignment="Top" Click="NonoHorario" Height="36" Width="46" Background="White" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="89,696,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold"><Run Text="Total"/><Run Language="pt-br" Text=":"/></TextBlock>
+        <TextBox x:Name="txtTotalDeAguaDoDia" HorizontalAlignment="Left" Margin="176,688,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22" BorderBrush="Black"/>
+        <Button x:Name="btnLimpar" Content="LIMPAR" HorizontalAlignment="Left" Margin="37,544,0,0" VerticalAlignment="Top" Width="375" Click="Limpar" Height="49" BorderBrush="#FF778DFF" Background="#FF778DFF" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="115,742,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Rounded MT Bold" Width="35" Text="Id:"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="176,734,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Arial Rounded MT Bold" Height="41" FontSize="22" BorderBrush="Black"/>
+        <Button x:Name="btnAtualizar" Content="ATUALIZAR" HorizontalAlignment="Left" Margin="37,598,0,0" VerticalAlignment="Top" Width="375" Click="Atualizar" Height="50" Background="#FF778DFF" BorderBrush="#FF778DFF" FontWeight="Bold" FontSize="14"/>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="35" Margin="218,132,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="35" Margin="218,173,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="35" Margin="218,214,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="35" Margin="218,255,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="35" Margin="218,296,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="35" Margin="218,337,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img7" HorizontalAlignment="Left" Height="35" Margin="218,377,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img8" HorizontalAlignment="Left" Height="35" Margin="218,419,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
+        <Image x:Name="img9" HorizontalAlignment="Left" Height="35" Margin="218,460,0,0" VerticalAlignment="Top" Width="34" Source="/feito.jpg" Stretch="Uniform" Visibility="Hidden"/>
 
     </Grid>
 </Window>
